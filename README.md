@@ -1,4 +1,4 @@
-#Image_processor
+# Image_processor
 A simple and slightly buggy app that lets you quickly add noise to your images.
 
 About the Application
