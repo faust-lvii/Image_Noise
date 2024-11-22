@@ -1,0 +1,12 @@
+2024-11-22 21:56:19,307 - __main__ - INFO - Opening Image Editor
+2024-11-22 21:56:19,390 - __main__ - ERROR - Error opening Image Editor: bad attribute "-type": must be -alpha, -transparentcolor, -disabled, -fullscreen, -toolwindow, or -topmost
+2024-11-22 21:56:31,392 - __main__ - INFO - Shutting down application
+2024-11-22 21:58:18,465 - __main__ - INFO - Opening Image Editor
+2024-11-22 21:58:25,266 - __main__ - INFO - Opening Video Editor
+2024-11-22 21:58:27,157 - __main__ - INFO - Opening Image Editor
+2024-11-22 21:58:32,916 - __main__ - INFO - Shutting down application
+2024-11-22 21:59:34,646 - __main__ - INFO - Opening Image Editor
+2024-11-22 21:59:40,983 - __main__ - INFO - Shutting down application
+2024-11-22 22:00:22,023 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/12223.png
+2024-11-22 22:00:42,054 - __main__ - INFO - Saving image to: C:/Users/kyusu/OneDrive/Masaüstü/deneme        1.png
+2024-11-22 22:00:44,810 - __main__ - INFO - Closing Image Editor
