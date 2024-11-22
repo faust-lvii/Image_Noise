@@ -10,3 +10,11 @@
 2024-11-22 22:00:22,023 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/12223.png
 2024-11-22 22:00:42,054 - __main__ - INFO - Saving image to: C:/Users/kyusu/OneDrive/Masaüstü/deneme        1.png
 2024-11-22 22:00:44,810 - __main__ - INFO - Closing Image Editor
+2024-11-22 22:12:40,964 - __main__ - INFO - Opening Video Editor
+2024-11-22 22:12:43,931 - __main__ - INFO - Shutting down application
+2024-11-22 22:14:14,953 - __main__ - INFO - Opening Video Editor
+2024-11-22 22:14:23,215 - Video_Editor - INFO - Closing Video Editor
+2024-11-22 22:14:24,357 - Video_Editor - INFO - Closing Video Editor
+2024-11-22 22:14:27,820 - __main__ - INFO - Opening Image Editor
+2024-11-22 22:15:39,535 - Image_Noise - INFO - Closing Image Editor
+2024-11-22 22:15:41,892 - Image_Noise - INFO - Closing Image Editor

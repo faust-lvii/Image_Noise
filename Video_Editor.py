@@ -122,6 +122,100 @@ class VideoProcessor(Thread):
         self.stop_event.set()
         self.is_running = False
 
+class VideoPlayer:
+    """Video player component for previewing videos"""
+    def __init__(self, parent, width=640, height=480):
+        self.parent = parent
+        self.width = width
+        self.height = height
+        self.is_playing = False
+        self.current_frame = None
+        self.cap = None
+        self.logger = logging.getLogger(__name__)
+        
+        # Create video display canvas
+        self.canvas = ctk.CTkCanvas(parent, width=width, height=height, bg='black')
+        self.canvas.pack(pady=10)
+        
+        # Create control buttons
+        self.controls_frame = ctk.CTkFrame(parent)
+        self.controls_frame.pack(pady=5)
+        
+        self.play_button = ctk.CTkButton(self.controls_frame, text="Play", command=self.toggle_play)
+        self.play_button.pack(side='left', padx=5)
+        
+        self.stop_button = ctk.CTkButton(self.controls_frame, text="Stop", command=self.stop)
+        self.stop_button.pack(side='left', padx=5)
+        
+    def load_video(self, video_path):
+        """Load a video file for playback"""
+        if self.cap is not None:
+            self.stop()
+            
+        self.cap = cv2.VideoCapture(video_path)
+        if not self.cap.isOpened():
+            self.logger.error(f"Could not open video: {video_path}")
+            return False
+            
+        # Get video properties
+        self.fps = self.cap.get(cv2.CAP_PROP_FPS)
+        self.frame_delay = int(1000 / self.fps)  # Delay in milliseconds
+        return True
+        
+    def toggle_play(self):
+        """Toggle video playback"""
+        if self.cap is None:
+            return
+            
+        if self.is_playing:
+            self.is_playing = False
+            self.play_button.configure(text="Play")
+        else:
+            self.is_playing = True
+            self.play_button.configure(text="Pause")
+            self.play()
+            
+    def play(self):
+        """Play video frame by frame"""
+        if not self.is_playing or self.cap is None:
+            return
+            
+        ret, frame = self.cap.read()
+        if ret:
+            # Resize frame to fit canvas
+            frame = cv2.resize(frame, (self.width, self.height))
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            image = Image.fromarray(frame)
+            photo = ImageTk.PhotoImage(image=image)
+            
+            # Update canvas
+            self.current_frame = photo
+            self.canvas.create_image(0, 0, anchor='nw', image=photo)
+            
+            # Schedule next frame
+            self.parent.after(self.frame_delay, self.play)
+        else:
+            # Video ended
+            self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+            self.is_playing = False
+            self.play_button.configure(text="Play")
+            
+    def stop(self):
+        """Stop video playback"""
+        self.is_playing = False
+        self.play_button.configure(text="Play")
+        if self.cap is not None:
+            self.cap.release()
+            self.cap = None
+        # Clear canvas
+        self.canvas.delete("all")
+        
+    def destroy(self):
+        """Clean up resources"""
+        self.stop()
+        self.canvas.destroy()
+        self.controls_frame.destroy()
+
 class VideoEditor(ctk.CTk):
     """Video Editor application for applying effects to video files"""
     
@@ -131,6 +225,7 @@ class VideoEditor(ctk.CTk):
         
         # Initialize variables
         self.video_processor: Optional[VideoProcessor] = None
+        self.video_player: Optional[VideoPlayer] = None
         self.current_video_path: Optional[str] = None
         self.current_settings: Dict[str, float] = {
             'noise': 0.0,
@@ -201,12 +296,10 @@ class VideoEditor(ctk.CTk):
         """Setup the main content area"""
         self.main_frame = ctk.CTkFrame(self)
         self.main_frame.grid(row=0, column=1, padx=20, pady=20, sticky="nsew")
-        self.main_frame.grid_columnconfigure(0, weight=1)
-        self.main_frame.grid_rowconfigure(1, weight=1)
         
-        self.video_label = ctk.CTkLabel(self.main_frame, text="No video loaded")
-        self.video_label.grid(row=0, column=0, padx=20, pady=20)
-        
+        # Create video player
+        self.video_player = VideoPlayer(self.main_frame)
+
     def _setup_controls(self):
         """Setup the control panel with progress bar and sliders"""
         self.controls_frame = ctk.CTkFrame(self)
@@ -253,20 +346,10 @@ class VideoEditor(ctk.CTk):
                 self.logger.info(f"Opening video: {filename}")
                 self.current_video_path = filename
                 
-                # Load first frame for preview
-                cap = cv2.VideoCapture(filename)
-                ret, frame = cap.read()
-                
-                if ret:
-                    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                    preview = Image.fromarray(frame)
-                    preview.thumbnail((800, 600))
-                    photo = ctk.CTkImage(preview, size=preview.size)
-                    self.video_label.configure(image=photo, text="")
-                    self.video_label.image = photo
+                # Load video for preview
+                if self.video_player:
+                    self.video_player.load_video(filename)
                     
-                cap.release()
-                
         except Exception as e:
             self.logger.error(f"Error opening video: {str(e)}")
             self.show_error(f"Error opening video: {str(e)}")
@@ -311,18 +394,15 @@ class VideoEditor(ctk.CTk):
         if status == "progress":
             self.progress_bar.set(data / 100)
         elif status == "finished":
-            self.logger.info("Video processing completed")
-            self.progress_bar.set(1)
-            self.process_button.configure(state="normal")
-            self.cancel_button.configure(state="disabled")
-            self.show_success(f"Video saved to: {data}")
-        elif status == "error":
-            self.logger.error(f"Video processing error: {data}")
             self.progress_bar.set(0)
-            self.process_button.configure(state="normal")
-            self.cancel_button.configure(state="disabled")
+            self.show_success("Video processing completed!")
+            # Load processed video for preview
+            if self.video_player:
+                self.video_player.load_video(data)
+        elif status == "error":
             self.show_error(f"Error processing video: {data}")
-            
+            self.progress_bar.set(0)
+
     def update_settings(self, param: str, value: float):
         """Update effect settings"""
         self.current_settings[param] = float(value)

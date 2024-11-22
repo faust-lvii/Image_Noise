@@ -74,8 +74,8 @@ class MainApplication(ctk.CTk):
         try:
             self.safely_close_current_editor()
             self.logger.info("Opening Image Editor")
-            self.current_editor = ImageEditor()
-            self.setup_editor_window(self.current_editor)
+            editor_window = ImageEditor()
+            editor_window.mainloop()
         except Exception as e:
             self.logger.error(f"Error opening Image Editor: {str(e)}")
             self.show_error("Failed to open Image Editor")
@@ -85,8 +85,8 @@ class MainApplication(ctk.CTk):
         try:
             self.safely_close_current_editor()
             self.logger.info("Opening Video Editor")
-            self.current_editor = VideoEditor()
-            self.setup_editor_window(self.current_editor)
+            editor_window = VideoEditor()
+            editor_window.mainloop()
         except Exception as e:
             self.logger.error(f"Error opening Video Editor: {str(e)}")
             self.show_error("Failed to open Video Editor")
@@ -94,17 +94,13 @@ class MainApplication(ctk.CTk):
     def setup_editor_window(self, editor):
         """Configure common properties for editor windows"""
         editor.focus_force()  # Bring window to front
-        editor.protocol("WM_DELETE_WINDOW", lambda: self.safely_close_current_editor())
         
     def safely_close_current_editor(self):
         """Safely close the current editor if one exists"""
-        if self.current_editor:
-            try:
-                self.current_editor.destroy()
-                self.current_editor = None
-            except Exception as e:
-                self.logger.error(f"Error closing editor: {str(e)}")
-                
+        if self.current_editor and self.current_editor.winfo_exists():
+            self.current_editor.destroy()
+        self.current_editor = None
+        
     def show_error(self, message):
         """Display error message to user"""
         messagebox.showerror("Error", message)
