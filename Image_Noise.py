@@ -172,6 +172,7 @@ class ImageEditor(ctk.CTk):
                 self.logger.info(f"Opening image: {filename}")
                 self.original_image = Image.open(filename)
                 self.image = self.original_image.copy()
+                self.logger.info(f"Loaded image size: {self.image.size}, format: {self.image.format}, mode: {self.image.mode}")
                 self.update_image_display()
                 self.reset_effects()  # Reset all sliders
         except Exception as e:
@@ -264,17 +265,37 @@ class ImageEditor(ctk.CTk):
     def update_image_display(self):
         """Update the display with the current image"""
         if not self.image:
+            self.logger.warning("No image to display.")
             return
-            
+        
         try:
             # Resize image to fit the window while maintaining aspect ratio
             display_size = (800, 600)
             display_image = self.image.copy()
+            
+            # Log the original size and mode of the image
+            self.logger.info(f"Original image size: {self.image.size}, mode: {self.image.mode}")
+            
             display_image.thumbnail(display_size, Image.LANCZOS)
             
+            # Log the new size of the image after thumbnail
+            self.logger.info(f"Thumbnail image size: {display_image.size}, mode: {display_image.mode}")
+            
+            # Convert to a format compatible with CTkImage
+            self.display_photo = ctk.CTkImage(display_image.convert("RGBA"))
+            
+            # Log the display photo creation
+            self.logger.info("CTkImage created successfully.")
+            
             # Update display
-            self.display_photo = ctk.CTkImage(display_image, size=display_image.size)
-            self.image_label.configure(image=self.display_photo, text="")
+            if self.image_label is not None:
+                self.image_label.configure(image=self.display_photo, text="")
+                self.logger.info("Image label updated successfully.")
+            else:
+                self.logger.error("Image label is not initialized.")
+            
+            # Keep a reference to the CTkImage to prevent garbage collection
+            self.image_label.image = self.display_photo
             
             # Clean up
             del display_image
@@ -282,7 +303,7 @@ class ImageEditor(ctk.CTk):
             
         except Exception as e:
             self.logger.error(f"Error updating display: {str(e)}")
-            self.show_error("Error updating display")
+            self.show_error(f"Error updating display: {str(e)}")
             
     def reset_effects(self):
         """Reset all effects to their default values"""
@@ -316,6 +337,19 @@ class ImageEditor(ctk.CTk):
         except Exception as e:
             self.logger.error(f"Error during cleanup: {str(e)}")
             self.quit()
+
+    def load_image(self, image_path):
+        """Load an image and handle errors"""
+        try:
+            self.image = Image.open(image_path)  # Example of loading an image
+            self.display_image()  # Method to display the image
+            self.logger.info(f"Successfully loaded image: {image_path}")
+        except FileNotFoundError:
+            self.logger.error(f"File not found: {image_path}")
+            self.show_error("Image file not found.")
+        except Exception as e:
+            self.logger.error(f"Error loading image: {str(e)}")
+            self.show_error("Failed to load image.")
 
 if __name__ == "__main__":
     try:

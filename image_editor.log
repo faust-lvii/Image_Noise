@@ -18,3 +18,110 @@
 2024-11-22 22:14:27,820 - __main__ - INFO - Opening Image Editor
 2024-11-22 22:15:39,535 - Image_Noise - INFO - Closing Image Editor
 2024-11-22 22:15:41,892 - Image_Noise - INFO - Closing Image Editor
+2024-12-01 03:03:54,652 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:03:59,456 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:03:59,526 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 03:04:02,794 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 03:04:06,828 - __main__ - INFO - Shutting down application
+2024-12-01 03:04:08,312 - __main__ - INFO - Shutting down application
+2024-12-01 03:05:37,981 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:05:44,707 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:05:44,774 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 03:05:47,567 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 03:05:49,893 - __main__ - INFO - Shutting down application
+2024-12-01 03:05:51,101 - __main__ - INFO - Shutting down application
+2024-12-01 03:06:40,122 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:06:43,691 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:06:43,758 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 03:06:44,630 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 03:06:47,185 - __main__ - INFO - Shutting down application
+2024-12-01 03:06:48,286 - __main__ - INFO - Shutting down application
+2024-12-01 03:07:31,646 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:07:37,362 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:07:37,408 - Image_Noise - INFO - Original image size: (1920, 2559)
+2024-12-01 03:07:37,426 - Image_Noise - INFO - Thumbnail image size: (450, 600)
+2024-12-01 03:07:37,431 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 03:07:42,312 - Image_Noise - INFO - Original image size: (1920, 2559)
+2024-12-01 03:07:42,332 - Image_Noise - INFO - Thumbnail image size: (450, 600)
+2024-12-01 03:07:42,335 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 03:07:48,686 - __main__ - INFO - Shutting down application
+2024-12-01 03:07:50,690 - __main__ - INFO - Shutting down application
+2024-12-01 03:23:28,262 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:23:32,644 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:23:32,692 - Image_Noise - INFO - Original image size: (1920, 2559)
+2024-12-01 03:23:32,712 - Image_Noise - INFO - Thumbnail image size: (450, 600)
+2024-12-01 03:23:32,719 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 03:23:34,651 - Image_Noise - INFO - Original image size: (1920, 2559)
+2024-12-01 03:23:34,669 - Image_Noise - INFO - Thumbnail image size: (450, 600)
+2024-12-01 03:23:34,674 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 03:23:36,576 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:23:42,284 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/313131.png
+2024-12-01 03:23:42,349 - Image_Noise - INFO - Original image size: (2560, 1440)
+2024-12-01 03:23:42,379 - Image_Noise - INFO - Thumbnail image size: (800, 450)
+2024-12-01 03:23:42,382 - Image_Noise - ERROR - Error updating display: image "pyimage3" doesn't exist
+2024-12-01 03:23:43,477 - Image_Noise - INFO - Original image size: (2560, 1440)
+2024-12-01 03:23:43,508 - Image_Noise - INFO - Thumbnail image size: (800, 450)
+2024-12-01 03:23:43,512 - Image_Noise - ERROR - Error updating display: image "pyimage4" doesn't exist
+2024-12-01 03:23:48,072 - __main__ - INFO - Shutting down application
+2024-12-01 03:23:50,128 - __main__ - INFO - Shutting down application
+2024-12-01 03:23:50,772 - __main__ - INFO - Shutting down application
+2024-12-01 03:24:31,381 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:24:35,112 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:24:35,160 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:24:35,179 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:24:35,179 - Image_Noise - ERROR - Error updating display: 'CTkImage' object has no attribute 'size'
+2024-12-01 03:24:36,137 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:24:36,157 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:24:36,158 - Image_Noise - ERROR - Error updating display: 'CTkImage' object has no attribute 'size'
+2024-12-01 03:24:38,570 - __main__ - INFO - Shutting down application
+2024-12-01 03:24:39,247 - __main__ - INFO - Shutting down application
+2024-12-01 03:25:57,531 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:26:01,581 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:26:01,623 - Image_Noise - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 03:26:01,628 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:26:01,647 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:26:01,647 - Image_Noise - ERROR - Error updating display: 'CTkImage' object has no attribute 'size'
+2024-12-01 03:26:04,623 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:26:04,641 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:26:04,642 - Image_Noise - ERROR - Error updating display: 'CTkImage' object has no attribute 'size'
+2024-12-01 03:26:06,629 - __main__ - INFO - Shutting down application
+2024-12-01 03:26:07,208 - __main__ - INFO - Shutting down application
+2024-12-01 03:26:40,597 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:26:44,441 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:26:44,485 - Image_Noise - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 03:26:44,489 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:26:44,507 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:26:44,508 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 03:26:44,515 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 03:26:46,013 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:26:46,032 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:26:46,032 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 03:26:46,036 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 03:26:48,304 - __main__ - INFO - Shutting down application
+2024-12-01 03:26:49,316 - __main__ - INFO - Shutting down application
+2024-12-01 03:27:20,019 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:27:25,175 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:27:25,218 - Image_Noise - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 03:27:25,222 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:27:25,240 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:27:25,240 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 03:27:25,247 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 03:27:26,736 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:27:26,755 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:27:26,756 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 03:27:26,759 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 03:27:28,759 - __main__ - INFO - Shutting down application
+2024-12-01 03:27:29,749 - __main__ - INFO - Shutting down application
+2024-12-01 03:28:16,233 - __main__ - INFO - Opening Image Editor
+2024-12-01 03:28:20,832 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 03:28:20,874 - Image_Noise - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 03:28:20,878 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:28:20,895 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:28:20,895 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 03:28:20,901 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 03:28:22,655 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 03:28:22,674 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 03:28:22,674 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 03:28:22,677 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 03:28:24,644 - __main__ - INFO - Shutting down application
+2024-12-01 03:28:25,599 - __main__ - INFO - Shutting down application
