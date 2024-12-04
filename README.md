@@ -29,7 +29,7 @@ A modern, feature-rich image processing application built with Python and Custom
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Image_Noise.git
+git clone https://github.com/faust-lvii/Image_Noise.git
 cd Image_Noise
 ```
 
