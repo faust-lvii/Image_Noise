@@ -6,7 +6,7 @@ import customtkinter as ctk
 from customtkinter import filedialog
 import io
 import logging
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional
 import gc
 from tkinter import messagebox
 
@@ -20,15 +20,15 @@ logging.basicConfig(
     ]
 )
 
-class ImageEditor(ctk.CTk):
+class ImageEditor(ctk.CTkToplevel):
     """
     Image Editor application for applying various effects and filters to images.
     Supports multiple image formats and provides real-time preview of effects.
     """
     
-    def __init__(self):
-        super().__init__()
-        self.logger = logging.getLogger(__name__)
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.logger = logging.getLogger("Image_Noise")
         
         # Initialize image variables with type hints
         self.image: Optional[Image.Image] = None
@@ -65,25 +65,45 @@ class ImageEditor(ctk.CTk):
         
     def setup_ui(self):
         """Initialize and configure the user interface"""
-        # Configure window
         self.title("Image Noise Editor")
         self.geometry("1200x800")
         self.minsize(800, 600)
-        
-        # Configure grid layout
+
+        # Configure main window grid
         self.grid_columnconfigure(1, weight=1)
         self.grid_rowconfigure(0, weight=1)
-        
+
+        # Create sidebar
         self._setup_sidebar()
-        self._setup_main_area()
+
+        # Create main content area
+        self.main_frame = ctk.CTkFrame(self)
+        self.main_frame.grid(row=0, column=1, sticky="nsew", padx=10, pady=10)
+        self.main_frame.grid_columnconfigure(0, weight=1)
+        self.main_frame.grid_rowconfigure(0, weight=1)
+
+        # Create image display frame with border
+        self.image_frame = ctk.CTkFrame(self.main_frame, fg_color="transparent")
+        self.image_frame.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
+        self.image_frame.grid_columnconfigure(0, weight=1)
+        self.image_frame.grid_rowconfigure(0, weight=1)
+
+        # Create image label
+        self.image_label = ctk.CTkLabel(self.image_frame, text="No image loaded", corner_radius=10)
+        self.image_label.grid(row=0, column=0, sticky="nsew")
+
+        # Create controls frame at the bottom
+        self.controls_frame = ctk.CTkFrame(self.main_frame)
+        self.controls_frame.grid(row=1, column=0, sticky="ew", padx=5, pady=5)
         self._setup_controls()
-        
+
     def _setup_sidebar(self):
         """Setup the sidebar with logo and buttons"""
+        # Create sidebar frame
         self.sidebar_frame = ctk.CTkFrame(self, width=200, corner_radius=0)
-        self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
+        self.sidebar_frame.grid(row=0, column=0, sticky="nsew", padx=(10, 0), pady=10)
         self.sidebar_frame.grid_rowconfigure(4, weight=1)
-        
+
         # Logo
         self.logo_label = ctk.CTkLabel(
             self.sidebar_frame,
@@ -91,76 +111,59 @@ class ImageEditor(ctk.CTk):
             font=ctk.CTkFont(size=20, weight="bold")
         )
         self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
-        
+
         # Buttons
-        self.open_button = ctk.CTkButton(
-            self.sidebar_frame,
-            text="Open Image",
-            command=self.open_image,
-            hover_color=("gray70", "gray30")
-        )
-        self.open_button.grid(row=1, column=0, padx=20, pady=10)
-        
-        self.save_button = ctk.CTkButton(
-            self.sidebar_frame,
-            text="Save Image",
-            command=self.save_image,
-            hover_color=("gray70", "gray30")
-        )
-        self.save_button.grid(row=2, column=0, padx=20, pady=10)
-        
-        # Reset button
-        self.reset_button = ctk.CTkButton(
-            self.sidebar_frame,
-            text="Reset Effects",
-            command=self.reset_effects,
-            hover_color=("gray70", "gray30")
-        )
-        self.reset_button.grid(row=3, column=0, padx=20, pady=10)
-        
-    def _setup_main_area(self):
-        """Setup the main content area"""
-        self.main_frame = ctk.CTkFrame(self)
-        self.main_frame.grid(row=0, column=1, padx=20, pady=20, sticky="nsew")
-        self.main_frame.grid_columnconfigure(0, weight=1)
-        self.main_frame.grid_rowconfigure(1, weight=1)
-        
-        self.image_label = ctk.CTkLabel(self.main_frame, text="No image loaded")
-        self.image_label.grid(row=0, column=0, padx=20, pady=20)
-        
+        button_params = [
+            ("Open Image", self.open_image),
+            ("Save Image", self.save_image),
+            ("Reset Effects", self.reset_effects)
+        ]
+
+        for idx, (text, command) in enumerate(button_params, 1):
+            btn = ctk.CTkButton(
+                self.sidebar_frame,
+                text=text,
+                command=command,
+                width=160,
+                height=40,
+                corner_radius=8,
+                hover_color=("gray70", "gray30")
+            )
+            btn.grid(row=idx, column=0, padx=20, pady=10)
+
     def _setup_controls(self):
         """Setup the control panel with sliders"""
-        self.controls_frame = ctk.CTkFrame(self)
-        self.controls_frame.grid(row=1, column=1, padx=20, pady=(0, 20), sticky="nsew")
-        
-        self.sliders = {}
         slider_params = [
             ("noise", "Noise"),
-            ("transparency", "Transparency"),
             ("contrast", "Contrast"),
-            ("sharpness", "Sharpness"),
             ("brightness", "Brightness"),
-            ("saturation", "Saturation")
+            ("saturation", "Saturation"),
+            ("sharpness", "Sharpness")
         ]
-        
-        for i, (param, label) in enumerate(slider_params):
-            slider_frame = ctk.CTkFrame(self.controls_frame)
-            slider_frame.grid(row=i, column=0, padx=10, pady=5, sticky="ew")
-            
-            label = ctk.CTkLabel(slider_frame, text=label)
-            label.grid(row=0, column=0, padx=10)
-            
+
+        self.sliders = {}
+        for idx, (param, label) in enumerate(slider_params):
+            # Create frame for each control
+            control_frame = ctk.CTkFrame(self.controls_frame)
+            control_frame.grid(row=0, column=idx, padx=10, pady=5, sticky="ew")
+            control_frame.grid_columnconfigure(1, weight=1)
+
+            # Label
+            ctk.CTkLabel(control_frame, text=label).grid(row=0, column=0, padx=5)
+
+            # Slider
             slider = ctk.CTkSlider(
-                slider_frame,
+                control_frame,
                 from_=-100,
                 to=100,
                 number_of_steps=200,
-                command=lambda value, param=param: self.update_image(param, value)
+                command=lambda value, p=param: self.update_image(p, value),
+                width=120
             )
-            slider.grid(row=0, column=1, padx=10, pady=10, sticky="ew")
+            slider.grid(row=0, column=1, padx=5, pady=5, sticky="ew")
             slider.set(0)
             self.sliders[param] = slider
-            
+
     def open_image(self):
         """Open and load an image file"""
         try:
@@ -267,40 +270,59 @@ class ImageEditor(ctk.CTk):
         if not self.image:
             self.logger.warning("No image to display.")
             return
-        
+
         try:
-            # Resize image to fit the window while maintaining aspect ratio
-            display_size = (800, 600)
+            # Calculate display size while maintaining aspect ratio
+            frame_width = self.image_frame.winfo_width() - 20  # Padding
+            frame_height = self.image_frame.winfo_height() - 20  # Padding
+
+            if frame_width <= 1 or frame_height <= 1:  # Window not properly sized yet
+                frame_width = 800
+                frame_height = 600
+
+            # Get original image size
+            img_width, img_height = self.image.size
+
+            # Calculate aspect ratios
+            width_ratio = frame_width / img_width
+            height_ratio = frame_height / img_height
+
+            # Use the smaller ratio to ensure image fits within bounds
+            scale_factor = min(width_ratio, height_ratio)
+
+            # Calculate new dimensions
+            new_width = int(img_width * scale_factor)
+            new_height = int(img_height * scale_factor)
+
+            # Create a copy and resize
             display_image = self.image.copy()
-            
-            # Log the original size and mode of the image
-            self.logger.info(f"Original image size: {self.image.size}, mode: {self.image.mode}")
-            
-            display_image.thumbnail(display_size, Image.LANCZOS)
-            
-            # Log the new size of the image after thumbnail
-            self.logger.info(f"Thumbnail image size: {display_image.size}, mode: {display_image.mode}")
-            
-            # Convert to a format compatible with CTkImage
-            self.display_photo = ctk.CTkImage(display_image.convert("RGBA"))
-            
-            # Log the display photo creation
-            self.logger.info("CTkImage created successfully.")
-            
-            # Update display
-            if self.image_label is not None:
+            display_image = display_image.resize((new_width, new_height), Image.Resampling.LANCZOS)
+
+            # Convert to RGB mode
+            if display_image.mode != 'RGB':
+                display_image = display_image.convert('RGB')
+
+            # Clean up old photo if exists
+            if hasattr(self, 'display_photo') and self.display_photo:
+                del self.display_photo
+                gc.collect()
+
+            # Create new CTkImage
+            self.display_photo = ctk.CTkImage(
+                light_image=display_image,
+                dark_image=display_image,
+                size=(new_width, new_height)
+            )
+
+            # Update label
+            if self.image_label:
                 self.image_label.configure(image=self.display_photo, text="")
-                self.logger.info("Image label updated successfully.")
-            else:
-                self.logger.error("Image label is not initialized.")
-            
-            # Keep a reference to the CTkImage to prevent garbage collection
-            self.image_label.image = self.display_photo
-            
+                self.logger.info(f"Image displayed successfully: {new_width}x{new_height}")
+
             # Clean up
             del display_image
             gc.collect()
-            
+
         except Exception as e:
             self.logger.error(f"Error updating display: {str(e)}")
             self.show_error(f"Error updating display: {str(e)}")
@@ -327,29 +349,21 @@ class ImageEditor(ctk.CTk):
         """Clean up resources before closing"""
         try:
             # Clean up resources
+            if hasattr(self, 'image_label'):
+                self.image_label.configure(image='')
+            
+            if hasattr(self, 'display_photo'):
+                del self.display_photo
+            
             self.image = None
             self.original_image = None
-            self.display_photo = None
             gc.collect()
             
             self.logger.info("Closing Image Editor")
-            self.quit()
+            self.destroy()
         except Exception as e:
             self.logger.error(f"Error during cleanup: {str(e)}")
-            self.quit()
-
-    def load_image(self, image_path):
-        """Load an image and handle errors"""
-        try:
-            self.image = Image.open(image_path)  # Example of loading an image
-            self.display_image()  # Method to display the image
-            self.logger.info(f"Successfully loaded image: {image_path}")
-        except FileNotFoundError:
-            self.logger.error(f"File not found: {image_path}")
-            self.show_error("Image file not found.")
-        except Exception as e:
-            self.logger.error(f"Error loading image: {str(e)}")
-            self.show_error("Failed to load image.")
+            self.destroy()
 
 if __name__ == "__main__":
     try:

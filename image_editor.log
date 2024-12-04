@@ -125,3 +125,448 @@
 2024-12-01 03:28:22,677 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
 2024-12-01 03:28:24,644 - __main__ - INFO - Shutting down application
 2024-12-01 03:28:25,599 - __main__ - INFO - Shutting down application
+2024-12-01 16:37:43,572 - __main__ - INFO - Opening Image Editor
+2024-12-01 16:37:48,966 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 16:37:49,036 - Image_Noise - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 16:37:49,043 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:37:49,066 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 16:37:49,068 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 16:37:49,078 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 16:37:50,777 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:37:50,800 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 16:37:50,801 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 16:37:50,805 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 16:37:52,947 - __main__ - INFO - Shutting down application
+2024-12-01 16:37:54,258 - __main__ - INFO - Shutting down application
+2024-12-01 16:40:08,697 - __main__ - INFO - Opening Image Editor
+2024-12-01 16:40:14,378 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 16:40:14,424 - Image_Noise - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 16:40:14,424 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:40:14,446 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 16:40:14,446 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 16:40:14,457 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 16:40:16,111 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:40:16,134 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 16:40:16,134 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 16:40:16,139 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 16:40:18,300 - __main__ - INFO - Shutting down application
+2024-12-01 16:40:19,507 - __main__ - INFO - Shutting down application
+2024-12-01 16:42:30,460 - __main__ - INFO - Opening Image Editor
+2024-12-01 16:42:35,945 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 16:42:35,989 - Image_Noise - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 16:42:36,014 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 16:42:37,732 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 16:42:40,923 - __main__ - INFO - Shutting down application
+2024-12-01 16:42:41,708 - __main__ - INFO - Shutting down application
+2024-12-01 16:44:26,645 - __main__ - INFO - Opening Image Editor
+2024-12-01 16:44:33,130 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 16:44:33,297 - Image_Noise - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 16:44:33,304 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:44:33,318 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 16:44:33,318 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 16:44:33,354 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 16:44:35,305 - Image_Noise - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:44:35,324 - Image_Noise - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 16:44:35,325 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 16:44:35,328 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 16:44:38,157 - __main__ - INFO - Shutting down application
+2024-12-01 16:44:39,416 - Image_Noise - INFO - Closing Image Editor
+2024-12-01 16:45:09,003 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 16:45:09,052 - __main__ - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 16:45:09,057 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:45:09,076 - __main__ - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 16:45:09,077 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:45:09,088 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:45:09,111 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:45:09,133 - __main__ - INFO - Thumbnail image size: (450, 600), mode: RGB
+2024-12-01 16:45:09,134 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:45:09,138 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:45:18,762 - __main__ - INFO - Closing Image Editor
+2024-12-01 16:46:14,569 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 16:46:14,610 - __main__ - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 16:46:14,617 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:46:14,653 - __main__ - INFO - Thumbnail image size: (600, 800), mode: RGB
+2024-12-01 16:46:14,653 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:46:14,669 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:46:14,695 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:46:14,736 - __main__ - INFO - Thumbnail image size: (600, 800), mode: RGB
+2024-12-01 16:46:14,736 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:46:14,743 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:46:20,097 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:46:20,144 - __main__ - INFO - Thumbnail image size: (600, 800), mode: RGB
+2024-12-01 16:46:20,144 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:46:20,151 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:46:20,553 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:46:20,596 - __main__ - INFO - Thumbnail image size: (600, 800), mode: RGB
+2024-12-01 16:46:20,597 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:46:20,602 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:46:22,706 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:46:22,743 - __main__ - INFO - Thumbnail image size: (600, 800), mode: RGB
+2024-12-01 16:46:22,747 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:46:22,749 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:46:23,141 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:46:23,185 - __main__ - INFO - Thumbnail image size: (600, 800), mode: RGB
+2024-12-01 16:46:23,185 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:46:23,185 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:46:23,928 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:46:23,966 - __main__ - INFO - Thumbnail image size: (600, 800), mode: RGB
+2024-12-01 16:46:23,969 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:46:23,973 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:46:24,360 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:46:24,407 - __main__ - INFO - Thumbnail image size: (600, 800), mode: RGB
+2024-12-01 16:46:24,407 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:46:24,407 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:46:25,921 - __main__ - INFO - Closing Image Editor
+2024-12-01 16:48:17,003 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/IMG20231023195621 (1).jpg
+2024-12-01 16:48:17,048 - __main__ - INFO - Loaded image size: (1920, 2559), format: None, mode: RGB
+2024-12-01 16:48:17,052 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:17,098 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:17,098 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:17,110 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:17,128 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:17,179 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:17,180 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:17,184 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:21,398 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:21,447 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:21,447 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:21,454 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:21,631 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:21,676 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:21,676 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:21,682 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:21,881 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:21,926 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:21,927 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:21,931 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:22,044 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:22,094 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:22,094 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:22,094 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:22,220 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:22,265 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:22,266 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:22,266 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:23,752 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:23,800 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:23,800 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:23,807 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:23,945 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:23,981 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:23,981 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:23,981 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:24,013 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:24,057 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:24,057 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:24,061 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:24,071 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:24,124 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:24,125 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:24,129 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:24,148 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:24,189 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:24,189 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:24,197 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:25,892 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:25,932 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:25,939 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:25,942 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:27,660 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:27,715 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:27,716 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:27,721 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:27,837 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:27,878 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:27,878 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:27,878 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:27,904 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:27,950 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:27,951 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:27,954 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:27,974 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:28,019 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:28,019 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:28,022 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:29,098 - __main__ - INFO - Original image size: (1920, 2559), mode: RGB
+2024-12-01 16:48:29,141 - __main__ - INFO - Thumbnail image size: (570, 760), mode: RGB
+2024-12-01 16:48:29,141 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 16:48:29,146 - __main__ - INFO - Image label updated successfully.
+2024-12-01 16:48:31,837 - __main__ - INFO - Closing Image Editor
+2024-12-01 17:03:58,049 - __main__ - INFO - Opening Image Editor
+2024-12-01 17:04:07,864 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/AAAAAAAAA1.png
+2024-12-01 17:04:08,025 - Image_Noise - INFO - Loaded image size: (1118, 1118), format: None, mode: RGBA
+2024-12-01 17:04:08,025 - Image_Noise - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:04:08,049 - Image_Noise - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:04:08,050 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 17:04:08,080 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 17:04:10,164 - Image_Noise - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:04:10,187 - Image_Noise - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:04:10,188 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 17:04:10,194 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 17:04:12,376 - __main__ - INFO - Shutting down application
+2024-12-01 17:04:13,315 - __main__ - INFO - Shutting down application
+2024-12-01 17:05:35,084 - __main__ - INFO - Opening Image Editor
+2024-12-01 17:05:39,019 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme1.png
+2024-12-01 17:05:39,088 - Image_Noise - INFO - Loaded image size: (2560, 1440), format: None, mode: RGB
+2024-12-01 17:05:39,096 - Image_Noise - INFO - Original image size: (2560, 1440), mode: RGB
+2024-12-01 17:05:39,136 - Image_Noise - INFO - Thumbnail image size: (1160, 653), mode: RGB
+2024-12-01 17:05:39,136 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 17:05:39,147 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 17:05:40,766 - Image_Noise - INFO - Original image size: (2560, 1440), mode: RGB
+2024-12-01 17:05:40,807 - Image_Noise - INFO - Thumbnail image size: (1160, 653), mode: RGB
+2024-12-01 17:05:40,808 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 17:05:40,814 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 17:05:42,639 - __main__ - INFO - Shutting down application
+2024-12-01 17:05:43,892 - __main__ - INFO - Shutting down application
+2024-12-01 17:06:04,206 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme2.png
+2024-12-01 17:06:04,266 - __main__ - INFO - Loaded image size: (1440, 1440), format: None, mode: RGBA
+2024-12-01 17:06:04,266 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:04,306 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:06:04,309 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:04,320 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:04,335 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:04,375 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:06:04,375 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:04,380 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:07,394 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:07,426 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:06:07,426 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:07,435 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:07,625 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:07,663 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:06:07,664 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:07,669 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:07,735 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:07,771 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:06:07,772 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:07,776 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:10,046 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:10,084 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:06:10,085 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:10,086 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:10,326 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:10,355 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:06:10,355 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:10,366 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:10,508 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:10,546 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:06:10,547 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:10,550 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:31,214 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:31,256 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:31,256 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:31,265 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:31,584 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:31,625 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:31,625 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:31,636 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:31,831 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:31,865 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:31,875 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:31,882 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:32,075 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:32,117 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:32,122 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:32,126 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:32,325 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:32,366 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:32,366 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:32,378 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:34,071 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:34,115 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:34,115 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:34,125 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:34,375 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:34,425 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:34,425 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:34,426 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:34,684 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:34,726 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:34,726 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:34,735 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:36,855 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:36,896 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:36,896 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:36,906 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:37,116 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:37,155 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:37,155 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:37,166 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:37,365 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:37,406 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:37,406 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:37,414 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:37,615 - __main__ - INFO - Original image size: (1440, 1440), mode: RGBA
+2024-12-01 17:06:37,657 - __main__ - INFO - Thumbnail image size: (987, 987), mode: RGBA
+2024-12-01 17:06:37,658 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:06:37,666 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:06:50,675 - __main__ - INFO - Saving image to: C:/Users/kyusu/OneDrive/Masaüstü/testedtested.png
+2024-12-01 17:07:12,367 - __main__ - INFO - Closing Image Editor
+2024-12-01 17:08:19,269 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/AAAAAAAAA1.png
+2024-12-01 17:08:19,306 - __main__ - INFO - Loaded image size: (1118, 1118), format: None, mode: RGBA
+2024-12-01 17:08:19,306 - __main__ - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:08:19,331 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:08:19,332 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:08:19,345 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:08:19,358 - __main__ - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:08:19,384 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:08:19,385 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:08:19,391 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:08:22,895 - __main__ - INFO - Closing Image Editor
+2024-12-01 17:11:38,941 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/AAAAAAAAA1.png
+2024-12-01 17:11:38,978 - __main__ - INFO - Loaded image size: (1118, 1118), format: None, mode: RGBA
+2024-12-01 17:11:38,980 - __main__ - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:11:39,000 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:11:39,000 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:11:39,010 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:11:39,026 - __main__ - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:11:39,046 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:11:39,048 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:11:39,053 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:11:46,206 - __main__ - INFO - Closing Image Editor
+2024-12-01 17:13:30,410 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/AAAAAAAAA1.png
+2024-12-01 17:13:30,445 - __main__ - INFO - Loaded image size: (1118, 1118), format: None, mode: RGBA
+2024-12-01 17:13:30,445 - __main__ - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:13:30,465 - __main__ - INFO - Thumbnail image size: (720, 720), mode: RGBA
+2024-12-01 17:13:30,465 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:13:30,477 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:13:30,494 - __main__ - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:13:30,514 - __main__ - INFO - Thumbnail image size: (720, 720), mode: RGBA
+2024-12-01 17:13:30,515 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:13:30,516 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:13:32,061 - __main__ - INFO - Closing Image Editor
+2024-12-01 17:16:46,066 - __main__ - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/AAAAAAAAA1.png
+2024-12-01 17:16:46,102 - __main__ - INFO - Loaded image size: (1118, 1118), format: None, mode: RGBA
+2024-12-01 17:16:46,105 - __main__ - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:16:46,128 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:16:46,129 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:16:46,139 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:16:46,157 - __main__ - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:16:46,180 - __main__ - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:16:46,181 - __main__ - INFO - CTkImage created successfully.
+2024-12-01 17:16:46,187 - __main__ - INFO - Image label updated successfully.
+2024-12-01 17:17:02,110 - __main__ - INFO - Closing Image Editor
+2024-12-01 17:17:29,696 - __main__ - INFO - Opening Image Editor
+2024-12-01 17:17:34,253 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/AAAAAAAAA1.png
+2024-12-01 17:17:34,290 - Image_Noise - INFO - Loaded image size: (1118, 1118), format: None, mode: RGBA
+2024-12-01 17:17:34,292 - Image_Noise - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:17:34,314 - Image_Noise - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:17:34,315 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 17:17:34,322 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 17:17:36,346 - Image_Noise - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:17:36,369 - Image_Noise - INFO - Thumbnail image size: (760, 760), mode: RGBA
+2024-12-01 17:17:36,370 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 17:17:36,376 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 17:17:38,416 - __main__ - INFO - Shutting down application
+2024-12-01 17:17:39,237 - __main__ - INFO - Shutting down application
+2024-12-01 17:19:16,554 - __main__ - INFO - Opening Image Editor
+2024-12-01 17:19:21,956 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/AAAAAAAAA1.png
+2024-12-01 17:19:21,992 - Image_Noise - INFO - Loaded image size: (1118, 1118), format: None, mode: RGBA
+2024-12-01 17:19:22,046 - Image_Noise - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:19:22,067 - Image_Noise - INFO - Thumbnail image size: (720, 720), mode: RGBA
+2024-12-01 17:19:22,068 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 17:19:22,076 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-01 17:19:23,379 - Image_Noise - INFO - Original image size: (1118, 1118), mode: RGBA
+2024-12-01 17:19:23,425 - Image_Noise - INFO - Thumbnail image size: (720, 720), mode: RGBA
+2024-12-01 17:19:23,425 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-01 17:19:23,429 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-01 17:19:26,004 - __main__ - INFO - Shutting down application
+2024-12-01 17:19:26,766 - __main__ - INFO - Shutting down application
+2024-12-04 08:12:45,892 - __main__ - INFO - Opening Image Editor
+2024-12-04 08:12:50,738 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme     1.jpg
+2024-12-04 08:12:50,911 - Image_Noise - INFO - Loaded image size: (1440, 1440), format: None, mode: RGB
+2024-12-04 08:12:50,913 - Image_Noise - INFO - Original image size: (1440, 1440), mode: RGB
+2024-12-04 08:12:50,936 - Image_Noise - INFO - Thumbnail image size: (720, 720), mode: RGB
+2024-12-04 08:12:50,937 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-04 08:12:50,968 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-04 08:12:52,573 - Image_Noise - INFO - Original image size: (1440, 1440), mode: RGB
+2024-12-04 08:12:52,594 - Image_Noise - INFO - Thumbnail image size: (720, 720), mode: RGB
+2024-12-04 08:12:52,594 - Image_Noise - INFO - CTkImage created successfully.
+2024-12-04 08:12:52,599 - Image_Noise - ERROR - Error updating display: image "pyimage2" doesn't exist
+2024-12-04 08:12:55,505 - __main__ - INFO - Shutting down application
+2024-12-04 08:12:56,560 - __main__ - INFO - Shutting down application
+2024-12-04 08:28:56,652 - __main__ - INFO - Opening Image Editor
+2024-12-04 08:29:01,535 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme        1.png
+2024-12-04 08:29:01,740 - Image_Noise - INFO - Loaded image size: (2560, 1440), format: None, mode: RGB
+2024-12-04 08:29:01,819 - Image_Noise - ERROR - Error updating display: image "pyimage1" doesn't exist
+2024-12-04 08:29:04,491 - Image_Noise - ERROR - Error opening image: image "pyimage1" doesn't exist
+2024-12-04 08:29:06,742 - __main__ - INFO - Shutting down application
+2024-12-04 08:29:07,806 - __main__ - INFO - Shutting down application
+2024-12-04 08:30:40,000 - __main__ - INFO - Opening Image Editor
+2024-12-04 08:30:47,270 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme     1.jpg
+2024-12-04 08:30:47,300 - Image_Noise - INFO - Loaded image size: (1440, 1440), format: None, mode: RGB
+2024-12-04 08:30:47,337 - Image_Noise - INFO - Display updated successfully: 600x600
+2024-12-04 08:30:47,387 - Image_Noise - INFO - Display updated successfully: 600x600
+2024-12-04 08:30:58,019 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme     1.jpg
+2024-12-04 08:30:58,038 - Image_Noise - INFO - Loaded image size: (1440, 1440), format: None, mode: RGB
+2024-12-04 08:30:58,081 - Image_Noise - INFO - Display updated successfully: 600x600
+2024-12-04 08:30:58,176 - Image_Noise - INFO - Display updated successfully: 600x600
+2024-12-04 08:31:10,920 - Image_Noise - INFO - Closing Image Editor
+2024-12-04 08:31:14,193 - __main__ - INFO - Shutting down application
+2024-12-04 08:32:53,129 - __main__ - INFO - Opening Image Editor
+2024-12-04 08:33:00,129 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme        1.png
+2024-12-04 08:33:00,201 - Image_Noise - INFO - Loaded image size: (2560, 1440), format: None, mode: RGB
+2024-12-04 08:33:00,252 - Image_Noise - INFO - Image displayed successfully: 940x528
+2024-12-04 08:33:00,318 - Image_Noise - INFO - Image displayed successfully: 940x528
+2024-12-04 08:33:14,096 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:15,096 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:15,307 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:15,452 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:15,543 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:15,635 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:15,721 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:17,415 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:17,602 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:17,712 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:17,823 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:17,937 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:18,048 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:18,159 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:18,271 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:18,380 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:18,490 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:18,632 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:18,743 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:18,853 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:18,963 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:19,073 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:20,514 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:20,698 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:20,892 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:21,087 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:21,284 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:21,486 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:21,682 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:21,885 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:22,077 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:23,566 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:24,077 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:24,572 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:25,053 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:25,534 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:26,019 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:26,500 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:26,983 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:27,465 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:27,949 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:28,435 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:29,454 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:30,053 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:30,657 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:31,893 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:32,501 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:33,102 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:33,714 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:36,620 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:37,458 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:40,760 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:41,321 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:41,880 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:42,440 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:46,179 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:46,798 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:47,416 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:47,974 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:33:48,532 - Image_Noise - INFO - Image displayed successfully: 1008x567
+2024-12-04 08:34:01,066 - Image_Noise - INFO - Saving image to: C:/Users/kyusu/OneDrive/Masaüstü/yenitest.png
+2024-12-04 08:34:02,894 - Image_Noise - INFO - Closing Image Editor

@@ -1,6 +1,6 @@
 import customtkinter as ctk
 from Image_Noise import ImageEditor
-from Video_Editor import VideoEditor
+from Video_Editor import VideoEditor  # VideoEditor sınıfını içe aktar
 import logging
 import sys
 from tkinter import messagebox
@@ -55,6 +55,7 @@ class MainApplication(ctk.CTk):
         )
         self.image_button.pack(side="left", padx=10)
         
+        # Activate VideoEditor button
         self.video_button = ctk.CTkButton(
             self.header_frame, 
             text="Video Editor", 
@@ -74,8 +75,8 @@ class MainApplication(ctk.CTk):
         try:
             self.safely_close_current_editor()
             self.logger.info("Opening Image Editor")
-            editor_window = ImageEditor()
-            editor_window.mainloop()
+            self.current_editor = ImageEditor(self)
+            self.current_editor.focus()
         except Exception as e:
             self.logger.error(f"Error opening Image Editor: {str(e)}")
             self.show_error("Failed to open Image Editor")
@@ -85,16 +86,12 @@ class MainApplication(ctk.CTk):
         try:
             self.safely_close_current_editor()
             self.logger.info("Opening Video Editor")
-            editor_window = VideoEditor()
-            editor_window.mainloop()
+            self.current_editor = VideoEditor(self)
+            self.current_editor.focus()
         except Exception as e:
             self.logger.error(f"Error opening Video Editor: {str(e)}")
             self.show_error("Failed to open Video Editor")
             
-    def setup_editor_window(self, editor):
-        """Configure common properties for editor windows"""
-        editor.focus_force()  # Bring window to front
-        
     def safely_close_current_editor(self):
         """Safely close the current editor if one exists"""
         if self.current_editor and self.current_editor.winfo_exists():
