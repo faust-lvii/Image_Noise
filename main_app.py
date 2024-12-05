@@ -76,6 +76,7 @@ class MainApplication(ctk.CTk):
             self.safely_close_current_editor()
             self.logger.info("Opening Image Editor")
             self.current_editor = ImageEditor(self)
+            self.current_editor.attributes('-topmost', True)
             self.current_editor.focus()
         except Exception as e:
             self.logger.error(f"Error opening Image Editor: {str(e)}")
@@ -87,6 +88,7 @@ class MainApplication(ctk.CTk):
             self.safely_close_current_editor()
             self.logger.info("Opening Video Editor")
             self.current_editor = VideoEditor(self)
+            self.current_editor.attributes('-topmost', True)
             self.current_editor.focus()
         except Exception as e:
             self.logger.error(f"Error opening Video Editor: {str(e)}")
