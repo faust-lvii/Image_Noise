@@ -1095,3 +1095,122 @@
 2024-12-05 23:17:21,449 - __main__ - INFO - Opening Image Editor
 2024-12-05 23:17:23,764 - Image_Noise - INFO - Closing Image Editor
 2024-12-05 23:17:24,956 - __main__ - INFO - Shutting down application
+2024-12-06 18:51:49,919 - __main__ - INFO - Opening Image Editor
+2024-12-06 18:52:02,925 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 18:52:07,660 - __main__ - INFO - Shutting down application
+2024-12-06 18:53:04,781 - __main__ - INFO - Opening Image Editor
+2024-12-06 18:53:15,010 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 18:53:19,388 - __main__ - INFO - Shutting down application
+2024-12-06 18:54:54,320 - __main__ - INFO - Opening Image Editor
+2024-12-06 18:55:16,034 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 18:55:17,851 - __main__ - INFO - Shutting down application
+2024-12-06 18:56:23,484 - __main__ - INFO - Opening Image Editor
+2024-12-06 18:56:30,530 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 18:56:33,603 - __main__ - INFO - Shutting down application
+2024-12-06 18:57:55,802 - __main__ - INFO - Opening Image Editor
+2024-12-06 18:57:55,811 - __main__ - ERROR - Error opening Image Editor: cannot use geometry manager grid inside .!imageeditor which already has slaves managed by pack
+2024-12-06 18:58:08,001 - Image_Noise - ERROR - Error opening image: 'ImageEditor' object has no attribute 'load_image'
+2024-12-06 18:58:16,829 - __main__ - INFO - Shutting down application
+2024-12-06 18:58:49,253 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/AAAAAAAAA1.png
+2024-12-06 18:58:49,563 - Image_Noise - INFO - Loaded image size: (1118, 1118), format: None, mode: RGBA
+2024-12-06 18:58:49,623 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-06 18:58:49,663 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-06 18:58:49,826 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-06 18:58:51,443 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-06 18:59:13,438 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:13,847 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:15,977 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,186 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,227 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,283 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,346 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,403 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,456 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,625 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,685 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,743 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,797 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,852 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,902 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:16,953 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:17,005 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:17,055 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:17,095 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:17,151 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:17,200 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:17,241 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:18,276 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:18,466 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:18,540 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:18,601 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:18,678 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:19,775 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:19,997 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:20,092 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:20,178 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:20,276 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:20,373 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:22,981 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:23,199 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:23,323 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:23,465 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:23,598 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:23,725 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:23,851 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:23,978 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:24,088 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:24,219 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:24,339 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:24,450 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:24,587 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:24,713 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:24,896 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:25,024 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:26,226 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:26,490 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:26,755 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:27,013 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:27,275 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:27,528 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-06 18:59:40,252 - Image_Noise - INFO - Saving image to: C:/Users/kyusu/OneDrive/Masaüstü/ASDWsssssssss.png
+2024-12-06 18:59:43,118 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 19:03:30,476 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 19:03:51,319 - __main__ - INFO - Opening Image Editor
+2024-12-06 19:04:20,936 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 19:04:22,383 - __main__ - INFO - Shutting down application
+2024-12-06 19:05:19,660 - __main__ - INFO - Opening Image Editor
+2024-12-06 19:05:22,266 - __main__ - WARNING - No file selected for Image Editor
+2024-12-06 19:05:23,878 - __main__ - INFO - Opening Image Editor
+2024-12-06 19:05:26,766 - __main__ - ERROR - Error opening Image Editor: 'str' object has no attribute 'items'
+2024-12-06 19:05:29,184 - __main__ - INFO - Shutting down application
+2024-12-06 19:05:45,447 - __main__ - INFO - Opening Image Editor
+2024-12-06 19:05:55,223 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme        1.png
+2024-12-06 19:05:55,423 - Image_Noise - INFO - Loaded image size: (2560, 1440), format: None, mode: RGB
+2024-12-06 19:05:55,504 - Image_Noise - INFO - Image displayed successfully: 1038x584
+2024-12-06 19:05:55,576 - Image_Noise - INFO - Image displayed successfully: 1038x584
+2024-12-06 19:05:55,763 - Image_Noise - INFO - Image displayed successfully: 1038x584
+2024-12-06 19:05:58,618 - Image_Noise - INFO - Image displayed successfully: 1038x584
+2024-12-06 19:06:05,045 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 19:06:05,515 - __main__ - INFO - Shutting down application
+2024-12-06 19:13:29,401 - __main__ - INFO - Shutting down application
+2024-12-06 19:14:15,777 - __main__ - INFO - Opening Image Editor
+2024-12-06 19:14:19,051 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 19:14:20,762 - __main__ - INFO - Shutting down application
+2024-12-06 19:15:23,329 - root - ERROR - Application crashed: cannot use geometry manager grid inside . which already has slaves managed by pack
+Traceback (most recent call last):
+  File "C:\Users\kyusu\OneDrive\Masaüstü\gitypity\Image_Noise\main_app.py", line 135, in <module>
+    app = MainApplication()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyusu\OneDrive\Masaüstü\gitypity\Image_Noise\main_app.py", line 28, in __init__
+    self.create_ui()
+  File "C:\Users\kyusu\OneDrive\Masaüstü\gitypity\Image_Noise\main_app.py", line 52, in create_ui
+    self.header_frame.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
+  File "C:\Users\kyusu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 321, in grid
+    return super().grid(**self._apply_argument_scaling(kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2580, in grid_configure
+    self.tk.call(
+_tkinter.TclError: cannot use geometry manager grid inside . which already has slaves managed by pack
+2024-12-06 19:15:45,068 - __main__ - INFO - Opening Image Editor
+2024-12-06 19:15:47,509 - Image_Noise - INFO - Closing Image Editor
+2024-12-06 19:15:52,919 - __main__ - INFO - Shutting down application

@@ -32,7 +32,12 @@ class MainApplication(ctk.CTk):
         self.title("Media Editor")
         self.geometry("1200x800")
         self.minsize(800, 600)  # Set minimum window size
-        
+        self.configure(bg="#2E2E2E")  # Set background color
+
+        # Create a title label
+        title_label = ctk.CTkLabel(self, text="Media Editor", font=("Arial", 24), text_color="white", bg_color="#2E2E2E")
+        title_label.pack(pady=(10, 20))
+
         # Configure grid layout
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(1, weight=1)
@@ -43,32 +48,47 @@ class MainApplication(ctk.CTk):
     def create_ui(self):
         """Create and setup all UI elements"""
         # Create header frame
-        self.header_frame = ctk.CTkFrame(self)
-        self.header_frame.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
+        self.header_frame = ctk.CTkFrame(self, bg_color="#3E3E3E")
+        self.header_frame.pack(padx=10, pady=10, fill="x")
         
         # Create buttons with hover effects
+        self.create_buttons()
+        
+        # Content frame for editors
+        self.content_frame = ctk.CTkFrame(self)
+        self.content_frame.pack(padx=10, pady=(0, 10), fill="both", expand=True)
+        
+        self.current_editor = None
+        
+    def create_buttons(self):
+        """Create buttons for image and video editors"""
         self.image_button = ctk.CTkButton(
             self.header_frame, 
             text="Image Editor", 
             command=self.open_image_editor,
-            hover_color=("gray70", "gray30")
+            hover_color=("gray70", "gray30"),
+            fg_color="#4CAF50",  # Green color
+            text_color="white",
+            width=150
         )
         self.image_button.pack(side="left", padx=10)
         
-        # Activate VideoEditor button
         self.video_button = ctk.CTkButton(
             self.header_frame, 
             text="Video Editor", 
             command=self.open_video_editor,
-            hover_color=("gray70", "gray30")
+            hover_color=("gray70", "gray30"),
+            fg_color="#2196F3",  # Blue color
+            text_color="white",
+            width=150
         )
         self.video_button.pack(side="left", padx=10)
         
-        # Content frame for editors
-        self.content_frame = ctk.CTkFrame(self)
-        self.content_frame.grid(row=1, column=0, padx=10, pady=(0, 10), sticky="nsew")
+        # Add a separator for better visual distinction
+        separator = ctk.CTkFrame(self.header_frame, height=2, bg_color="white")
+        separator.pack(side="left", padx=10, fill="y")
         
-        self.current_editor = None
+        # Add more buttons or features as needed
         
     def open_image_editor(self):
         """Open the image editor window and handle any errors"""
