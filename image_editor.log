@@ -1214,3 +1214,359 @@ _tkinter.TclError: cannot use geometry manager grid inside . which already has s
 2024-12-06 19:15:45,068 - __main__ - INFO - Opening Image Editor
 2024-12-06 19:15:47,509 - Image_Noise - INFO - Closing Image Editor
 2024-12-06 19:15:52,919 - __main__ - INFO - Shutting down application
+2024-12-07 10:25:20,057 - __main__ - INFO - Opening Image Editor
+2024-12-07 10:25:36,028 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/background.png
+2024-12-07 10:25:36,170 - Image_Noise - INFO - Loaded image size: (800, 600), format: None, mode: P
+2024-12-07 10:25:36,204 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:36,229 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:36,365 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:37,697 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:40,134 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:40,399 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:42,109 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,312 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,323 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,334 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,347 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,359 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,371 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,383 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,396 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,408 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,419 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,429 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,454 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,470 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,486 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,532 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,579 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,602 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,614 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,658 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,670 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,719 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,733 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,761 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,813 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,874 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,885 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,899 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,937 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:42,961 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:25:50,786 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:51,746 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:51,978 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:52,197 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:52,439 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:53,365 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:53,598 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:54,504 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:54,843 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:55,072 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:58,034 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:58,232 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:25:59,834 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:00,780 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:01,762 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:02,902 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:04,073 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:05,585 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:06,816 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:12,808 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:17,789 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:19,199 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:20,385 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:21,346 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:22,283 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:23,431 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:24,726 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:29,026 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:30,534 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:31,791 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:31,814 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:36,040 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:45,962 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:26:47,783 - Image_Noise - INFO - Closing Image Editor
+2024-12-07 10:27:36,042 - __main__ - INFO - Opening Image Editor
+2024-12-07 10:27:44,685 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/500x500-000000-80-0-0.jpg
+2024-12-07 10:27:44,689 - Image_Noise - INFO - Loaded image size: (500, 500), format: None, mode: RGB
+2024-12-07 10:27:44,702 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:44,733 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:44,863 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:46,593 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:48,712 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:48,909 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:48,937 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:48,966 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:48,994 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:51,831 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:52,027 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:52,054 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:52,083 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:52,111 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:52,138 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:52,166 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 10:27:54,862 - Image_Noise - INFO - Closing Image Editor
+2024-12-07 10:27:56,527 - __main__ - INFO - Opening Image Editor
+2024-12-07 10:28:14,623 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/background.png
+2024-12-07 10:28:14,624 - Image_Noise - INFO - Loaded image size: (800, 600), format: None, mode: P
+2024-12-07 10:28:14,633 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:14,659 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:14,795 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:16,216 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:20,676 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:20,766 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:20,807 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:20,849 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:20,889 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:20,929 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:20,971 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,011 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,052 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,092 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,133 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,416 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,456 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,496 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,538 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,579 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,620 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,660 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,700 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,813 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,854 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,895 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,934 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:21,975 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,017 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,056 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,098 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,138 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,177 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,217 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,384 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,440 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,482 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:22,527 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:23,825 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,016 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,026 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,040 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,052 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,059 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,079 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,091 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,102 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,117 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,129 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,142 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,156 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,168 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,188 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,206 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,221 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,236 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,250 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,284 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,329 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,341 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,354 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,368 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,384 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,395 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,407 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,420 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,428 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,442 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,455 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,468 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,496 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,515 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,535 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,558 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,747 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,768 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,787 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:24,801 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,820 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:24,832 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,848 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:24,860 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,878 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:24,890 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,907 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:24,918 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,937 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:24,949 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,965 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:24,977 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:24,992 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:25,005 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:25,022 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:25,034 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:25,051 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:25,061 - Image_Noise - ERROR - Error applying effects: cannot filter palette images
+2024-12-07 10:28:25,078 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:26,594 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:26,767 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:26,784 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:26,796 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:26,814 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:26,826 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:26,844 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:26,856 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:26,873 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:26,884 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:26,901 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:26,911 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:26,927 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:26,937 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:26,954 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:26,964 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:26,981 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:26,990 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,007 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,017 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,033 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,044 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,060 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,071 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,086 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,096 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,111 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,121 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,138 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,148 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,165 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,191 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,202 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,219 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,234 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,252 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,263 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,283 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,294 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,312 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,324 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,342 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:27,353 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:27,370 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:28,537 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:28,746 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:28,764 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:28,776 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:28,794 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:28,807 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:28,824 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:28,849 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:28,944 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:28,963 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:28,974 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:28,991 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:29,001 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:29,020 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:29,030 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:29,048 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:29,059 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:29,077 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:29,089 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:29,106 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:29,130 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:29,157 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:29,172 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,419 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,607 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,624 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,638 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,655 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,668 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,684 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,695 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,710 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,747 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,805 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,821 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,835 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,851 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,864 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,881 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,893 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,910 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,922 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:30,938 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:30,964 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:31,046 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:31,062 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:31,072 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:31,089 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:31,142 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:31,158 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:31,169 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:31,184 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:31,199 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:31,214 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:31,225 - Image_Noise - ERROR - Error applying effects: image has wrong mode
+2024-12-07 10:28:31,241 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:32,474 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 10:28:43,475 - Image_Noise - INFO - Image displayed successfully: 778x584
+2024-12-07 12:58:50,066 - __main__ - INFO - Opening Image Editor
+2024-12-07 12:58:59,360 - __main__ - INFO - Shutting down application
+2024-12-07 12:59:44,314 - __main__ - INFO - Opening Image Editor
+2024-12-07 12:59:52,420 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/yeni_kallavi.png
+2024-12-07 12:59:52,485 - Image_Noise - INFO - Loaded image size: (1118, 1118), format: None, mode: RGBA
+2024-12-07 12:59:52,522 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 12:59:52,569 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 12:59:52,723 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 12:59:56,353 - Image_Noise - INFO - Closing Image Editor
+2024-12-07 12:59:58,085 - __main__ - INFO - Shutting down application
+2024-12-07 13:00:07,015 - __main__ - INFO - Opening Image Editor
+2024-12-07 13:00:12,534 - Image_Noise - INFO - Closing Image Editor
+2024-12-07 13:00:16,184 - __main__ - INFO - Shutting down application
+2024-12-07 13:00:54,169 - __main__ - INFO - Opening Image Editor
+2024-12-07 13:00:59,446 - Image_Noise - INFO - Closing Image Editor
+2024-12-07 13:01:02,139 - __main__ - INFO - Shutting down application
+2024-12-07 13:02:00,544 - __main__ - INFO - Opening Image Editor
+2024-12-07 13:02:00,582 - __main__ - ERROR - Error opening Image Editor: color . must be string ('transparent' or 'color-name' or 'hex-color') or tuple of two strings, not <class '__main__.MainApplication'>
+2024-12-07 13:02:03,714 - __main__ - INFO - Shutting down application
+2024-12-07 13:02:42,967 - __main__ - INFO - Opening Image Editor
+2024-12-07 13:02:43,005 - __main__ - ERROR - Error opening Image Editor: color . must be string ('transparent' or 'color-name' or 'hex-color') or tuple of two strings, not <class '__main__.MainApplication'>
+Traceback (most recent call last):
+  File "C:\Users\kyusu\OneDrive\Masaüstü\gitypity\Image_Noise\main_app.py", line 99, in open_image_editor
+    self.current_editor = ImageEditor(self)
+                          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyusu\OneDrive\Masaüstü\gitypity\Image_Noise\Image_Noise.py", line 30, in __init__
+    super().__init__(parent)
+  File "C:\Users\kyusu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\customtkinter\windows\ctk_tk.py", line 53, in __init__
+    self._fg_color = ThemeManager.theme["CTk"]["fg_color"] if fg_color is None else self._check_color_type(fg_color)
+                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyusu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\customtkinter\windows\widgets\appearance_mode\appearance_mode_base_class.py", line 61, in _check_color_type
+    raise ValueError(f"color {color} must be string ('transparent' or 'color-name' or 'hex-color') or tuple of two strings, not {type(color)}")
+ValueError: color . must be string ('transparent' or 'color-name' or 'hex-color') or tuple of two strings, not <class '__main__.MainApplication'>
+2024-12-07 13:02:46,927 - __main__ - INFO - Shutting down application
+2024-12-07 13:03:55,944 - __main__ - INFO - Opening Image Editor
+2024-12-07 13:03:59,517 - Image_Noise - INFO - Closing Image Editor
+2024-12-07 13:04:00,760 - __main__ - INFO - Shutting down application
+2024-12-07 13:04:12,905 - __main__ - INFO - Opening Image Editor
+2024-12-07 13:04:17,982 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme     1.png
+2024-12-07 13:04:18,046 - Image_Noise - INFO - Loaded image size: (1440, 1440), format: None, mode: RGBA
+2024-12-07 13:04:18,088 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 13:04:18,144 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 13:04:18,305 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 13:04:19,559 - Image_Noise - INFO - Image displayed successfully: 584x584
+2024-12-07 13:04:23,789 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-07 13:04:23,946 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-07 13:04:27,507 - Image_Noise - INFO - Image displayed successfully: 400x400
+2024-12-07 13:04:30,869 - Image_Noise - INFO - Closing Image Editor
+2024-12-07 13:04:32,895 - __main__ - INFO - Shutting down application
+2024-12-07 13:06:53,129 - __main__ - INFO - Shutting down application
+2024-12-07 13:07:51,449 - __main__ - INFO - Shutting down application
+2024-12-07 13:08:19,001 - __main__ - INFO - Opening Image Editor
+2024-12-07 13:08:29,423 - __main__ - INFO - Opening Image Editor
+2024-12-07 13:08:35,013 - Image_Noise - INFO - Opening image: C:/Users/kyusu/OneDrive/Masaüstü/deneme        1.png
+2024-12-07 13:08:35,086 - Image_Noise - INFO - Loaded image size: (2560, 1440), format: None, mode: RGB
+2024-12-07 13:08:35,137 - Image_Noise - INFO - Image displayed successfully: 1038x584
+2024-12-07 13:08:35,203 - Image_Noise - INFO - Image displayed successfully: 1038x584
+2024-12-07 13:08:35,373 - Image_Noise - INFO - Image displayed successfully: 1038x584
+2024-12-07 13:08:36,839 - Image_Noise - INFO - Image displayed successfully: 1038x584
+2024-12-07 13:08:39,463 - Image_Noise - INFO - Closing Image Editor
+2024-12-07 13:08:40,444 - __main__ - INFO - Shutting down application

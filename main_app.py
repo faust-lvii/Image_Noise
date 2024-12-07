@@ -32,10 +32,10 @@ class MainApplication(ctk.CTk):
         self.title("Media Editor")
         self.geometry("1200x800")
         self.minsize(800, 600)  # Set minimum window size
-        self.configure(bg="#2E2E2E")  # Set background color
+        self.configure(bg="#1E1E1E")  # Set background color to dark
 
         # Create a title label
-        title_label = ctk.CTkLabel(self, text="Media Editor", font=("Arial", 24), text_color="white", bg_color="#2E2E2E")
+        title_label = ctk.CTkLabel(self, text="Media Editor", font=("Arial", 24), text_color="white", bg_color="#1E1E1E")
         title_label.pack(pady=(10, 20))
 
         # Configure grid layout
@@ -48,14 +48,14 @@ class MainApplication(ctk.CTk):
     def create_ui(self):
         """Create and setup all UI elements"""
         # Create header frame
-        self.header_frame = ctk.CTkFrame(self, bg_color="#3E3E3E")
+        self.header_frame = ctk.CTkFrame(self, bg_color="#2E2E2E")  # Darker header frame
         self.header_frame.pack(padx=10, pady=10, fill="x")
         
         # Create buttons with hover effects
         self.create_buttons()
         
         # Content frame for editors
-        self.content_frame = ctk.CTkFrame(self)
+        self.content_frame = ctk.CTkFrame(self, bg_color="#1E1E1E")  # Dark content frame
         self.content_frame.pack(padx=10, pady=(0, 10), fill="both", expand=True)
         
         self.current_editor = None
@@ -66,10 +66,12 @@ class MainApplication(ctk.CTk):
             self.header_frame, 
             text="Image Editor", 
             command=self.open_image_editor,
-            hover_color=("gray70", "gray30"),
-            fg_color="#4CAF50",  # Green color
-            text_color="white",
-            width=150
+            hover_color="#555555",  # Darker hover color
+            fg_color="#FFFFFF",  # White color for button
+            text_color="#000000",  # Black text color
+            width=150,
+            border_width=2,  # Add border for better visibility
+            border_color="#000000"  # Black border for contrast
         )
         self.image_button.pack(side="left", padx=10)
         
@@ -77,15 +79,17 @@ class MainApplication(ctk.CTk):
             self.header_frame, 
             text="Video Editor", 
             command=self.open_video_editor,
-            hover_color=("gray70", "gray30"),
-            fg_color="#2196F3",  # Blue color
-            text_color="white",
-            width=150
+            hover_color="#555555",  # Darker hover color
+            fg_color="#FFFFFF",  # White color for button
+            text_color="#000000",  # Black text color
+            width=150,
+            border_width=2,  # Add border for better visibility
+            border_color="#000000"  # Black border for contrast
         )
         self.video_button.pack(side="left", padx=10)
         
         # Add a separator for better visual distinction
-        separator = ctk.CTkFrame(self.header_frame, height=2, bg_color="white")
+        separator = ctk.CTkFrame(self.header_frame, height=2, bg_color="black")
         separator.pack(side="left", padx=10, fill="y")
         
         # Add more buttons or features as needed
@@ -95,11 +99,12 @@ class MainApplication(ctk.CTk):
         try:
             self.safely_close_current_editor()
             self.logger.info("Opening Image Editor")
+            self.attributes('-topmost', False)  # Ana pencereyi arka plana al
             self.current_editor = ImageEditor(self)
-            self.current_editor.attributes('-topmost', True)
+            self.current_editor.attributes('-topmost', False)  # Ana uygulamanın üzerinde değil
             self.current_editor.focus()
         except Exception as e:
-            self.logger.error(f"Error opening Image Editor: {str(e)}")
+            self.logger.error(f"Error opening Image Editor: {str(e)}", exc_info=True)  # Hata bilgisi ile logla
             self.show_error("Failed to open Image Editor")
             
     def open_video_editor(self):
@@ -107,8 +112,9 @@ class MainApplication(ctk.CTk):
         try:
             self.safely_close_current_editor()
             self.logger.info("Opening Video Editor")
+            self.attributes('-topmost', False)  # Ana pencereyi arka plana al
             self.current_editor = VideoEditor(self)
-            self.current_editor.attributes('-topmost', True)
+            self.current_editor.attributes('-topmost', True)  # VideoEditor'ı ön plana al
             self.current_editor.focus()
         except Exception as e:
             self.logger.error(f"Error opening Video Editor: {str(e)}")
