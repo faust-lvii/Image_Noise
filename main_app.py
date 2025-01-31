@@ -29,15 +29,36 @@ class MainApplication(ctk.CTk):
         
     def setup_window(self):
         """Configure main window properties and geometry"""
-        self.title("Media Editor")
+        self.title("Media Editor Pro")
         self.geometry("1200x800")
-        self.minsize(800, 600)  # Set minimum window size
-        self.configure(bg="#1E1E1E")  # Set background color to dark
-
-        # Create a title label
-        title_label = ctk.CTkLabel(self, text="Media Editor", font=("Arial", 24), text_color="white", bg_color="#1E1E1E")
-        title_label.pack(pady=(10, 20))
-
+        self.minsize(800, 600)
+        
+        # Siyah-beyaz tema ayarları
+        ctk.set_appearance_mode("dark")
+        ctk.set_default_color_theme("dark-blue")
+        
+        self.configure(fg_color=("#ffffff", "#000000"))
+        
+        # Ana başlık
+        title_frame = ctk.CTkFrame(self, fg_color="transparent")
+        title_frame.pack(pady=(20, 10), fill="x")
+        
+        title_label = ctk.CTkLabel(
+            title_frame,
+            text="Media Editor Pro",
+            font=ctk.CTkFont(family="Helvetica", size=32, weight="bold"),
+            text_color=("#1a1a1a", "#ffffff")
+        )
+        title_label.pack()
+        
+        subtitle_label = ctk.CTkLabel(
+            title_frame,
+            text="Professional Media Editing Suite",
+            font=ctk.CTkFont(family="Helvetica", size=14),
+            text_color=("#4a4a4a", "#b0b0b0")
+        )
+        subtitle_label.pack(pady=(0, 10))
+        
         # Configure grid layout
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(1, weight=1)
@@ -61,51 +82,73 @@ class MainApplication(ctk.CTk):
         self.current_editor = None
         
     def create_buttons(self):
-        """Create buttons for image and video editors"""
+        """Create buttons for image and video editors with modern design"""
+        button_frame = ctk.CTkFrame(
+            self.header_frame,
+            fg_color=("#f0f0f0", "#1a1a1a"),
+            corner_radius=15
+        )
+        button_frame.pack(pady=20, padx=30, fill="x")
+        button_frame.grid_columnconfigure((0, 1), weight=1)
+        
+        # Image Editor Button
         self.image_button = ctk.CTkButton(
-            self.header_frame, 
-            text="Image Editor", 
+            button_frame,
+            text="Image Editor",
             command=self.open_image_editor,
-            hover_color="#555555",  # Darker hover color
-            fg_color="#FFFFFF",  # White color for button
-            text_color="#000000",  # Black text color
-            width=150,
-            border_width=2,  # Add border for better visibility
-            border_color="#000000"  # Black border for contrast
+            font=ctk.CTkFont(size=15, weight="bold"),
+            height=45,
+            corner_radius=10,
+            fg_color=("#2a2a2a", "#ffffff"),
+            hover_color=("#4a4a4a", "#b0b0b0"),
+            text_color=("#ffffff", "#000000"),
+            border_spacing=10
         )
-        self.image_button.pack(side="left", padx=10)
+        self.image_button.grid(row=0, column=0, padx=20, sticky="ew")
         
+        # Video Editor Button
         self.video_button = ctk.CTkButton(
-            self.header_frame, 
-            text="Video Editor", 
+            button_frame,
+            text="Video Editor",
             command=self.open_video_editor,
-            hover_color="#555555",  # Darker hover color
-            fg_color="#FFFFFF",  # White color for button
-            text_color="#000000",  # Black text color
-            width=150,
-            border_width=2,  # Add border for better visibility
-            border_color="#000000"  # Black border for contrast
+            font=ctk.CTkFont(size=15, weight="bold"),
+            height=45,
+            corner_radius=10,
+            fg_color=("#2a2a2a", "#ffffff"),
+            hover_color=("#4a4a4a", "#b0b0b0"),
+            text_color=("#ffffff", "#000000"),
+            border_spacing=10
         )
-        self.video_button.pack(side="left", padx=10)
-        
-        # Add a separator for better visual distinction
-        separator = ctk.CTkFrame(self.header_frame, height=2, bg_color="black")
-        separator.pack(side="left", padx=10, fill="y")
-        
-        # Add more buttons or features as needed
+        self.video_button.grid(row=0, column=1, padx=20, sticky="ew")
         
     def open_image_editor(self):
         """Open the image editor window and handle any errors"""
         try:
             self.safely_close_current_editor()
             self.logger.info("Opening Image Editor")
-            self.attributes('-topmost', False)  # Ana pencereyi arka plana al
+            
+            # Ana pencereyi minimize et
+            self.iconify()
+            
+            # Image Editor'ı oluştur
             self.current_editor = ImageEditor(self)
-            self.current_editor.attributes('-topmost', False)  # Ana uygulamanın üzerinde değil
-            self.current_editor.focus()
+            
+            # Image Editor'ı ana pencere olarak ayarla
+            self.current_editor.attributes('-topmost', True)
+            self.current_editor.focus_force()
+            
+            # Image Editor kapatıldığında ana pencereyi geri getir
+            def on_editor_close():
+                self.current_editor.destroy()
+                self.deiconify()
+                self.current_editor = None
+            
+            self.current_editor.protocol("WM_DELETE_WINDOW", on_editor_close)
+            
         except Exception as e:
-            self.logger.error(f"Error opening Image Editor: {str(e)}", exc_info=True)  # Hata bilgisi ile logla
+            self.logger.error(f"Error opening Image Editor: {str(e)}", exc_info=True)
             self.show_error("Failed to open Image Editor")
+            self.deiconify()  # Hata durumunda ana pencereyi geri getir
             
     def open_video_editor(self):
         """Open the video editor window and handle any errors"""

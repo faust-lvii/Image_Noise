@@ -1570,3 +1570,11 @@ ValueError: color . must be string ('transparent' or 'color-name' or 'hex-color'
 2024-12-07 13:08:36,839 - Image_Noise - INFO - Image displayed successfully: 1038x584
 2024-12-07 13:08:39,463 - Image_Noise - INFO - Closing Image Editor
 2024-12-07 13:08:40,444 - __main__ - INFO - Shutting down application
+2025-01-31 21:26:04,506 - __main__ - INFO - Opening Image Editor
+2025-01-31 21:26:10,020 - __main__ - INFO - Shutting down application
+2025-01-31 21:33:25,750 - __main__ - INFO - Opening Image Editor
+2025-01-31 21:33:40,074 - __main__ - INFO - Shutting down application
+2025-01-31 21:51:02,966 - __main__ - INFO - Opening Image Editor
+2025-01-31 21:51:11,405 - Image_Noise - ERROR - Error opening image: 'ImageEditor' object has no attribute 'load_image'
+2025-01-31 21:53:17,734 - Image_Noise - ERROR - Error opening image: 'ImageEditor' object has no attribute 'load_image'
+2025-01-31 22:01:33,435 - __main__ - INFO - Shutting down application

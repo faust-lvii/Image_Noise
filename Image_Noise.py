@@ -65,9 +65,19 @@ class ImageEditor(ctk.CTkToplevel):
         
     def setup_ui(self):
         """Initialize and configure the user interface"""
-        self.title("Image Noise Editor Pro")
+        self.title("Image Editor Pro")
         self.geometry("1400x900")
         self.minsize(1000, 700)
+        
+        # Siyah-beyaz tema ayarları
+        self.configure(fg_color=("#ffffff", "#000000"))
+        
+        # Ana pencereyi ekranın ortasına konumlandır
+        screen_width = self.winfo_screenwidth()
+        screen_height = self.winfo_screenheight()
+        x = (screen_width - 1400) // 2
+        y = (screen_height - 900) // 2
+        self.geometry(f"1400x900+{x}+{y}")
 
         # Configure main window grid
         self.grid_columnconfigure(1, weight=1)
@@ -76,97 +86,156 @@ class ImageEditor(ctk.CTkToplevel):
         # Bind resize event
         self.bind('<Configure>', self.on_window_resize)
 
-        # Create and setup sidebar
+        # Create and setup sidebar with modern tasarım
         self._setup_sidebar()
 
         # Create main content area with modern styling
-        self.main_frame = ctk.CTkFrame(self, fg_color=("gray95", "gray10"))
+        self.main_frame = ctk.CTkFrame(
+            self,
+            fg_color=("#f8f8f8", "#0a0a0a"),
+            corner_radius=15,
+            border_width=1,
+            border_color=("#d0d0d0", "#2a2a2a")
+        )
         self.main_frame.grid(row=0, column=1, sticky="nsew", padx=15, pady=15)
         self.main_frame.grid_columnconfigure(0, weight=1)
-        self.main_frame.grid_rowconfigure(1, weight=1)  # Give more weight to image area
+        self.main_frame.grid_rowconfigure(1, weight=1)
 
-        # Create top info bar
-        self.info_frame = ctk.CTkFrame(self.main_frame, height=40, fg_color=("gray90", "gray15"))
+        # Create top info bar with modern design
+        self.info_frame = ctk.CTkFrame(
+            self.main_frame,
+            height=50,
+            fg_color=("#f0f0f0", "#1a1a1a"),
+            corner_radius=10
+        )
         self.info_frame.grid(row=0, column=0, sticky="ew", padx=10, pady=(10, 5))
         self.info_frame.grid_columnconfigure(1, weight=1)
 
-        # Image info labels
-        self.image_info_label = ctk.CTkLabel(self.info_frame, text="No image loaded", font=("Helvetica", 12))
-        self.image_info_label.grid(row=0, column=0, padx=10, pady=5)
+        # Image info labels with modern font
+        self.image_info_label = ctk.CTkLabel(
+            self.info_frame,
+            text="No image loaded",
+            font=ctk.CTkFont(family="Helvetica", size=13),
+            text_color=("#1a1a1a", "#ffffff")
+        )
+        self.image_info_label.grid(row=0, column=0, padx=15, pady=10)
         
-        self.image_size_label = ctk.CTkLabel(self.info_frame, text="Size: -", font=("Helvetica", 12))
-        self.image_size_label.grid(row=0, column=1, padx=10, pady=5)
+        self.image_size_label = ctk.CTkLabel(
+            self.info_frame,
+            text="Size: -",
+            font=ctk.CTkFont(family="Helvetica", size=13),
+            text_color=("#1a1a1a", "#ffffff")
+        )
+        self.image_size_label.grid(row=0, column=1, padx=15, pady=10)
 
-        # Create image display area with border and shadow effect
-        self.image_container = ctk.CTkFrame(self.main_frame, fg_color=("gray85", "gray20"))
+        # Create image display area with modern border and shadow
+        self.image_container = ctk.CTkFrame(
+            self.main_frame,
+            fg_color=("#f0f0f0", "#0f0f0f"),
+            corner_radius=15,
+            border_width=1,
+            border_color=("#d0d0d0", "#2a2a2a")
+        )
         self.image_container.grid(row=1, column=0, sticky="nsew", padx=10, pady=5)
         self.image_container.grid_columnconfigure(0, weight=1)
         self.image_container.grid_rowconfigure(0, weight=1)
 
-        # Inner frame for image
-        self.image_frame = ctk.CTkFrame(self.image_container, fg_color=("gray80", "gray25"))
-        self.image_frame.grid(row=0, column=0, sticky="nsew", padx=2, pady=2)
+        # Inner frame for image with subtle shadow effect
+        self.image_frame = ctk.CTkFrame(
+            self.image_container,
+            fg_color=("#e8e8e8", "#151515"),
+            corner_radius=10
+        )
+        self.image_frame.grid(row=0, column=0, sticky="nsew", padx=3, pady=3)
         self.image_frame.grid_columnconfigure(0, weight=1)
         self.image_frame.grid_rowconfigure(0, weight=1)
 
-        # Create image label with modern styling
+        # Modern image label with icon
         self.image_label = ctk.CTkLabel(
-            self.image_frame, 
-            text="Drag & Drop or Click 'Open Image' to Start",
-            font=("Helvetica", 14),
-            corner_radius=8
+            self.image_frame,
+            text="📸 Drag & Drop or Click 'Open Image' to Start",
+            font=ctk.CTkFont(family="Helvetica", size=16),
+            corner_radius=8,
+            fg_color=("#e0e0e0", "#1a1a1a"),
+            text_color=("#1a1a1a", "#ffffff")
         )
         self.image_label.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
 
-        # Create bottom control panel
-        self.bottom_frame = ctk.CTkFrame(self.main_frame, fg_color=("gray90", "gray15"))
+        # Create bottom control panel with modern design
+        self.bottom_frame = ctk.CTkFrame(
+            self.main_frame,
+            fg_color=("#f0f0f0", "#1a1a1a"),
+            corner_radius=10
+        )
         self.bottom_frame.grid(row=2, column=0, sticky="ew", padx=10, pady=(5, 10))
         
         # Setup controls in the bottom frame
         self._setup_controls()
 
     def _setup_sidebar(self):
-        """Setup the sidebar with logo and buttons"""
-        # Create sidebar frame with modern styling
-        self.sidebar_frame = ctk.CTkFrame(self, width=250, corner_radius=0, fg_color=("gray95", "gray10"))
+        """Setup the sidebar with modern design"""
+        # Create sidebar frame with gradient effect
+        self.sidebar_frame = ctk.CTkFrame(
+            self,
+            width=280,
+            corner_radius=15,
+            fg_color=("#f0f0f0", "#0a0a0a"),
+            border_width=1,
+            border_color=("#d0d0d0", "#2a2a2a")
+        )
         self.sidebar_frame.grid(row=0, column=0, sticky="nsew", padx=(15, 0), pady=15)
-        self.sidebar_frame.grid_rowconfigure(10, weight=1)  # Push everything to the top
+        self.sidebar_frame.grid_rowconfigure(10, weight=1)
 
-        # App title and logo
+        # Modern app title and logo
         title_frame = ctk.CTkFrame(self.sidebar_frame, fg_color="transparent")
-        title_frame.grid(row=0, column=0, padx=20, pady=(20, 10), sticky="ew")
+        title_frame.grid(row=0, column=0, padx=20, pady=(30, 15), sticky="ew")
 
         self.logo_label = ctk.CTkLabel(
             title_frame,
             text="Image Editor Pro",
-            font=ctk.CTkFont(size=24, weight="bold"),
-            text_color=("gray10", "gray90")
+            font=ctk.CTkFont(family="Helvetica", size=24, weight="bold"),
+            text_color=("#1a1a1a", "#ffffff")
         )
-        self.logo_label.pack(pady=10)
+        self.logo_label.pack(pady=5)
+        
+        version_label = ctk.CTkLabel(
+            title_frame,
+            text="Professional Edition",
+            font=ctk.CTkFont(family="Helvetica", size=12),
+            text_color=("#4a4a4a", "#b0b0b0")
+        )
+        version_label.pack()
 
-        # Separator
-        self.separator1 = ctk.CTkFrame(self.sidebar_frame, height=2, fg_color=("gray70", "gray30"))
-        self.separator1.grid(row=1, column=0, sticky="ew", padx=20, pady=(0, 20))
+        # Modern separator
+        self.separator1 = ctk.CTkFrame(
+            self.sidebar_frame,
+            height=2,
+            fg_color=("#d0d0d0", "#2a2a2a")
+        )
+        self.separator1.grid(row=1, column=0, sticky="ew", padx=25, pady=(0, 25))
 
-        # Main action buttons
+        # Modern action buttons with monochrome colors
         button_configs = [
             {
-                "text": "Open Image",
+                "text": "  Open Image",
                 "command": self.open_image,
-                "icon": "",
-                "row": 2
+                "icon": "📂",
+                "row": 2,
+                "color": ("#2a2a2a", "#ffffff")
             },
             {
-                "text": "Save Image",
+                "text": "  Save Image",
                 "command": self.save_image,
-                "icon": "",
-                "row": 3
+                "icon": "💾",
+                "row": 3,
+                "color": ("#2a2a2a", "#ffffff")
             },
             {
-                "text": "Reset Effects",
+                "text": "  Reset Effects",
                 "command": self.reset_effects,
-                "icon": "",
-                "row": 4
+                "icon": "🔄",
+                "row": 4,
+                "color": ("#2a2a2a", "#ffffff")
             }
         ]
 
@@ -174,32 +243,35 @@ class ImageEditor(ctk.CTkToplevel):
             button_frame = ctk.CTkFrame(self.sidebar_frame, fg_color="transparent")
             button_frame.grid(row=config["row"], column=0, padx=20, pady=5, sticky="ew")
 
-            icon_label = ctk.CTkLabel(button_frame, text=config["icon"], font=("Segoe UI Emoji", 20))
-            icon_label.pack(side="left", padx=(5, 10))
-
             btn = ctk.CTkButton(
                 button_frame,
-                text=config["text"],
+                text=f"{config['icon']}{config['text']}",
                 command=config["command"],
-                height=40,
-                corner_radius=8,
-                fg_color=("gray75", "gray25"),
-                hover_color=("gray70", "gray30")
+                height=45,
+                corner_radius=10,
+                fg_color=config["color"],
+                hover_color=("#4a4a4a", "#b0b0b0"),
+                font=ctk.CTkFont(size=14, weight="bold"),
+                text_color=("#ffffff", "#000000")  # Ters renk kontrastı
             )
-            btn.pack(side="left", fill="x", expand=True, padx=(0, 5))
+            btn.pack(fill="x", expand=True, padx=5)
 
-        # Separator before info
-        self.separator2 = ctk.CTkFrame(self.sidebar_frame, height=2, fg_color=("gray70", "gray30"))
-        self.separator2.grid(row=9, column=0, sticky="ew", padx=20, pady=20)
+        # Bottom separator
+        self.separator2 = ctk.CTkFrame(
+            self.sidebar_frame,
+            height=2,
+            fg_color=("#d0d0d0", "#2a2a2a")
+        )
+        self.separator2.grid(row=9, column=0, sticky="ew", padx=25, pady=25)
 
-        # Info section at bottom
+        # Modern info section
         self.info_label = ctk.CTkLabel(
             self.sidebar_frame,
-            text="Image Editor Pro v1.0\n 2024",
-            font=("Helvetica", 12),
-            text_color=("gray40", "gray60")
+            text="Image Editor Pro v2.0\n© 2024 All rights reserved",
+            font=ctk.CTkFont(family="Helvetica", size=12),
+            text_color=("#4a4a4a", "#b0b0b0")
         )
-        self.info_label.grid(row=11, column=0, padx=20, pady=20)
+        self.info_label.grid(row=10, column=0, padx=20, pady=15, sticky="s")
 
     def _setup_controls(self):
         """Setup the control panel with modern sliders"""
@@ -281,21 +353,30 @@ class ImageEditor(ctk.CTkToplevel):
     def open_image(self):
         """Open and load an image file"""
         try:
-            file_types = [("Image files", 
-                        " ".join(f"*{ext}" for exts in self.supported_formats.values() for ext in exts.split()))]
-            filename = filedialog.askopenfilename(filetypes=file_types)
+            # Pencereyi öne getir
+            self.lift()
+            self.focus_force()
             
-            if filename:
-                self.logger.info(f"Opening image: {filename}")
-                self.original_image = Image.open(filename)
-                self.image = self.original_image.copy()
-                self.logger.info(f"Loaded image size: {self.image.size}, format: {self.image.format}, mode: {self.image.mode}")
-                self.update_image_display()
-                self.update_image_info()  # Update image information
-                self.reset_effects()  # Reset all sliders
+            file_path = filedialog.askopenfilename(
+                title="Select Image",
+                filetypes=[
+                    ("All supported formats", " ".join(self.supported_formats.values())),
+                    ("PNG files", "*.png"),
+                    ("JPEG files", "*.jpg *.jpeg *.jpe *.jfif"),
+                    ("All files", "*.*")
+                ],
+                parent=self  # Parent pencere olarak ImageEditor'ı belirt
+            )
+            
+            if file_path:
+                self.load_image(file_path)
+                
+                # Dosya seçildikten sonra tekrar pencereyi öne getir
+                self.after(100, lambda: (self.lift(), self.focus_force()))
+                
         except Exception as e:
             self.logger.error(f"Error opening image: {str(e)}")
-            self.show_error(f"Error opening image: {str(e)}")
+            messagebox.showerror("Error", f"Failed to open image: {str(e)}")
 
     def save_image(self):
         """Save the processed image"""
@@ -498,6 +579,25 @@ class ImageEditor(ctk.CTkToplevel):
         except Exception as e:
             self.logger.error(f"Error during cleanup: {str(e)}")
             self.destroy()
+
+    def _adjust_color(self, color: str, amount: int) -> str:
+        """Adjust hex color brightness"""
+        if not color.startswith('#'):
+            return color
+            
+        # Convert hex to RGB
+        color = color.lstrip('#')
+        r = int(color[:2], 16)
+        g = int(color[2:4], 16)
+        b = int(color[4:], 16)
+        
+        # Adjust brightness
+        r = max(0, min(255, r + amount))
+        g = max(0, min(255, g + amount))
+        b = max(0, min(255, b + amount))
+        
+        # Convert back to hex
+        return f'#{r:02x}{g:02x}{b:02x}'
 
 if __name__ == "__main__":
     try:
