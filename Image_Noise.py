@@ -385,19 +385,29 @@ class ImageEditor(ctk.CTkToplevel):
             return
             
         try:
+            # Bring window to front
+            self.lift()
+            self.focus_force()
+            
             file_types = [
                 ("PNG files", "*.png"),
                 ("JPEG files", "*.jpg"),
                 ("All files", "*.*")
             ]
             filename = filedialog.asksaveasfilename(
+                title="Save Image As",
                 filetypes=file_types,
-                defaultextension=".png"
+                defaultextension=".png",
+                parent=self  # Set parent window
             )
             
             if filename:
                 self.logger.info(f"Saving image to: {filename}")
                 self.image.save(filename)
+                
+                # Bring window back to front after saving
+                self.after(100, lambda: (self.lift(), self.focus_force()))
+                
         except Exception as e:
             self.logger.error(f"Error saving image: {str(e)}")
             self.show_error(f"Error saving image: {str(e)}")
@@ -598,6 +608,31 @@ class ImageEditor(ctk.CTkToplevel):
         
         # Convert back to hex
         return f'#{r:02x}{g:02x}{b:02x}'
+
+    def load_image(self, file_path: str):
+        """Load and prepare image for editing"""
+        try:
+            # Open and convert image to RGB mode
+            img = Image.open(file_path)
+            if img.mode != 'RGB':
+                img = img.convert('RGB')
+                
+            # Store original and working copies
+            self.original_image = img
+            self.image = img.copy()
+            
+            # Reset all effect sliders
+            self.reset_effects()
+            
+            # Update display
+            self.update_image_display()
+            self.update_image_info()
+            
+            self.logger.info(f"Successfully loaded image: {file_path}")
+            
+        except Exception as e:
+            self.logger.error(f"Error loading image: {str(e)}")
+            raise
 
 if __name__ == "__main__":
     try:

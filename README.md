@@ -1,89 +1,66 @@
-# Image Noise Editor Pro 🖼️
+# Image Editor Pro
 
-A modern, feature-rich image processing application built with Python and CustomTkinter, designed for easy image manipulation and noise effects.
+A professional image editing application built with Python and CustomTkinter. This application provides a modern, user-friendly interface for applying various effects and filters to images.
 
-## ✨ Features
+## Features
 
-- 🎨 Modern and intuitive user interface
-- 🌓 Dark/Light mode support
-- 🎯 Real-time image processing
-- 🔧 Multiple image adjustment controls:
+- Modern, dark-themed user interface
+- Support for multiple image formats (PNG, JPEG, BMP, etc.)
+- Real-time preview of effects
+- Various image adjustment tools:
   - Brightness
   - Contrast
   - Saturation
   - Sharpness
-  - Noise generation
-- 📏 Dynamic image scaling
-- 🎭 Advanced noise effects
-- 💾 Save processed images
-- 🖱️ User-friendly controls
+  - Noise effects
 
-## 🚀 Getting Started
-
-### Prerequisites
+## Requirements
 
 - Python 3.8 or higher
-- pip (Python package manager)
+- Dependencies (install via pip):
+  ```
+  customtkinter>=5.2.0
+  opencv-python>=4.8.0
+  pillow>=10.0.0
+  numpy>=1.24.0
+  ```
 
-### Installation
+## Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/faust-lvii/Image_Noise.git
-cd Image_Noise
-```
+   ```bash
+   git clone https://github.com/yourusername/Image_Editor_Pro.git
+   ```
 
-2. Install required dependencies:
-```bash
-pip install -r requirements.txt
-```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Running the Application
+## Usage
 
-Launch the application by running:
-```bash
-python main_app.py
-```
+1. Run the application:
+   ```bash
+   python main_app.py
+   ```
 
-## 🛠️ Usage
+2. Click "Open Image Editor" to start editing
+3. Use the sidebar buttons to:
+   - Open an image
+   - Save your edited image
+   - Reset all effects
+4. Adjust effects using the sliders in the control panel
+5. View real-time previews of your changes
 
-1. Launch the application
-2. Click "Open Image" or drag and drop an image
-3. Use the sliders to adjust image properties:
-   - Adjust brightness, contrast, and saturation
-   - Control sharpness levels
-   - Add various noise effects
-4. Save your processed image using the "Save" button
+## Contributing
 
-## 🔧 Controls
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-- **Image Loading**: Drag & Drop or use Open Image button
-- **Brightness**: -100 to +100 adjustment
-- **Contrast**: -100 to +100 adjustment
-- **Saturation**: -100 to +100 adjustment
-- **Sharpness**: 0 to 100 adjustment
-- **Noise**: Various noise type selections
+## License
 
-## 🎯 Key Features Explained
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Image Processing
-- High-quality image scaling
-- Real-time preview
-- Memory-efficient processing
-- Support for common image formats
-
-### User Interface
-- Responsive design
-- Intuitive controls
-- Live preview updates
-- Modern styling with CustomTkinter
-
-### Performance
-- Optimized image processing
-- Efficient memory management
-- Smooth user experience
-
-## 🔍 Technical Details
+## Technical Details
 
 ### Built With
 - Python
@@ -98,21 +75,13 @@ python main_app.py
 - Storage: 100MB free space
 - Display: 1280x720 minimum resolution
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - CustomTkinter for the modern UI framework
 - Pillow for image processing capabilities
 - The Python community for invaluable resources
 
-## 📞 Support
+## Support
 
 For support, please open an issue in the GitHub repository or contact the maintainers.
 
