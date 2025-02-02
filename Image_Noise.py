@@ -67,7 +67,7 @@ class ImageEditor(ctk.CTkToplevel):
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
         
         # Configure window
-        self.title("Image Editor Pro")
+        self.title("Image Editor")
         self.geometry("1400x900")
         self.minsize(1000, 700)
         
@@ -200,7 +200,7 @@ class ImageEditor(ctk.CTkToplevel):
 
         self.logo_label = ctk.CTkLabel(
             title_frame,
-            text="Image Editor Pro",
+            text="Image Editor",
             font=ctk.CTkFont(family="Helvetica", size=24, weight="bold"),
             text_color=("#1a1a1a", "#ffffff")
         )
@@ -208,7 +208,7 @@ class ImageEditor(ctk.CTkToplevel):
         
         version_label = ctk.CTkLabel(
             title_frame,
-            text="Professional Edition",
+            text="Simple Edition",
             font=ctk.CTkFont(family="Helvetica", size=12),
             text_color=("#4a4a4a", "#b0b0b0")
         )
@@ -275,7 +275,7 @@ class ImageEditor(ctk.CTkToplevel):
         # Modern info section
         self.info_label = ctk.CTkLabel(
             self.sidebar_frame,
-            text="Image Editor Pro v2.0\n© 2024 All rights reserved",
+            text="Image Editor v2.0\n© 2024 All rights reserved",
             font=ctk.CTkFont(family="Helvetica", size=12),
             text_color=("#4a4a4a", "#b0b0b0")
         )

@@ -1,13 +1,13 @@
-# Image Editor Pro
+# Image Editor
 
-A professional image editing application built with Python and CustomTkinter. This application provides a modern, user-friendly interface for applying various effects and filters to images.
+A simple and minimal image editing application built with Python and CustomTkinter. This application provides a clean, user-friendly interface for applying various effects and filters to images.
 
 ## Features
 
 - Modern, dark-themed user interface
 - Support for multiple image formats (PNG, JPEG, BMP, etc.)
 - Real-time preview of effects
-- Various image adjustment tools:
+- Basic image adjustment tools:
   - Brightness
   - Contrast
   - Saturation
@@ -29,7 +29,7 @@ A professional image editing application built with Python and CustomTkinter. Th
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Image_Editor_Pro.git
+   git clone https://github.com/yourusername/Image_Editor.git
    ```
 
 2. Install dependencies:

@@ -28,7 +28,7 @@ class MainApplication(ctk.CTk):
         
     def setup_window(self):
         """Configure main window properties and geometry"""
-        self.title("Image Editor Pro")
+        self.title("Image Editor")
         self.geometry("1200x800")
         self.minsize(800, 600)
         
@@ -44,7 +44,7 @@ class MainApplication(ctk.CTk):
         
         title_label = ctk.CTkLabel(
             title_frame,
-            text="Image Editor Pro",
+            text="Image Editor",
             font=ctk.CTkFont(family="Helvetica", size=32, weight="bold"),
             text_color=("#1a1a1a", "#ffffff")
         )
@@ -52,7 +52,7 @@ class MainApplication(ctk.CTk):
         
         subtitle_label = ctk.CTkLabel(
             title_frame,
-            text="Professional Image Editing Suite",
+            text="Simple Image Editing Tool",
             font=ctk.CTkFont(family="Helvetica", size=14),
             text_color=("#4a4a4a", "#b0b0b0")
         )
