@@ -107,17 +107,35 @@ class MainApplication(ctk.CTk):
         """Open the image editor window and handle any errors"""
         try:
             self.safely_close_current_editor()
+            
+            # Hide main window
+            self.withdraw()
+            
+            # Create and show image editor
             self.current_editor = ImageEditor(self)
             self.current_editor.focus_force()
+            
+            # Set up callback for when editor is closed
+            def on_editor_close():
+                self.current_editor.destroy()
+                self.current_editor = None
+                self.deiconify()  # Show main window again
+                self.focus_force()
+            
+            self.current_editor.protocol("WM_DELETE_WINDOW", on_editor_close)
+            
         except Exception as e:
             self.logger.error(f"Error opening image editor: {str(e)}")
             self.show_error(f"Failed to open image editor: {str(e)}")
+            self.deiconify()  # Show main window if there's an error
             
     def safely_close_current_editor(self):
         """Safely close the current editor if one exists"""
         if self.current_editor:
             try:
                 self.current_editor.destroy()
+                self.deiconify()  # Show main window
+                self.focus_force()
             except Exception as e:
                 self.logger.error(f"Error closing editor: {str(e)}")
             self.current_editor = None

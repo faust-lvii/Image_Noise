@@ -35,6 +35,9 @@ class ImageEditor(ctk.CTkToplevel):
         self.original_image: Optional[Image.Image] = None
         self.display_photo: Optional[ctk.CTkImage] = None
         
+        # Store parent window reference
+        self.parent = args[0] if args else None
+        
         # Define supported formats with proper MIME types
         self.supported_formats: Dict[str, str] = {
             "PNG": "*.png",
@@ -63,22 +66,27 @@ class ImageEditor(ctk.CTkToplevel):
         self.setup_ui()
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
         
-    def setup_ui(self):
-        """Initialize and configure the user interface"""
+        # Configure window
         self.title("Image Editor Pro")
         self.geometry("1400x900")
         self.minsize(1000, 700)
         
-        # Siyah-beyaz tema ayarları
-        self.configure(fg_color=("#ffffff", "#000000"))
-        
-        # Ana pencereyi ekranın ortasına konumlandır
+        # Center window on screen
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
         x = (screen_width - 1400) // 2
         y = (screen_height - 900) // 2
         self.geometry(f"1400x900+{x}+{y}")
-
+        
+        # Ensure window is on top and focused
+        self.lift()
+        self.focus_force()
+        
+    def setup_ui(self):
+        """Initialize and configure the user interface"""
+        # Siyah-beyaz tema ayarları
+        self.configure(fg_color=("#ffffff", "#000000"))
+        
         # Configure main window grid
         self.grid_columnconfigure(1, weight=1)
         self.grid_rowconfigure(0, weight=1)
@@ -574,18 +582,19 @@ class ImageEditor(ctk.CTkToplevel):
         """Clean up resources before closing"""
         try:
             # Clean up resources
-            if hasattr(self, 'image_label'):
-                self.image_label.configure(image='')
-            
-            if hasattr(self, 'display_photo'):
-                del self.display_photo
-            
-            self.image = None
-            self.original_image = None
+            if self.image:
+                self.image = None
+            if self.original_image:
+                self.original_image = None
+            if self.display_photo:
+                self.display_photo = None
+                
+            # Force garbage collection
             gc.collect()
             
-            self.logger.info("Closing Image Editor")
+            # Destroy window
             self.destroy()
+            
         except Exception as e:
             self.logger.error(f"Error during cleanup: {str(e)}")
             self.destroy()
